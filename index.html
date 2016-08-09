@@ -1,12 +1,237 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+	<head>
+    	<meta charset="utf-8">
+    	<title>HTML Academy: Глейси</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<figure class="logo">
+				<img src="http://placehold.it/150x100" alt="Gllacy Shop">
+			</figure>
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="https://gllacy.ru/catalog">Каталог</a>
+						<div class="drop">
+							<ul class="droplist">
+								<li><a href="https://gllacy.ru/catalog/novelty">Новинки</a></li>
+								<li><a href="https://gllacy.ru/catalog/creamy">Сливочное</a></li>
+								<li><a href="https://gllacy.ru/catalog/sherbets">Щербеты</a></li>
+								<li><a href="https://gllacy.ru/catalog/fruit_ice">Фруктовый лед</a></li>
+								<li><a href="https://gllacy.ru/catalog/melorin">Мелорин</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="https://gllacy.ru/delivery">Доставка и оплата</a>
+					</li>
+					<li>
+						<a href="https://gllacy.ru/about_company">О компании</a>
+					</li>
+				</ul>
+			</nav>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+		<div class="user-block">
+			<ul class="private-office">
+				<li>
+					<a href="https://gllacy.ru/search" class="search">Поиск
+						<div class="office-search-form">
+							<form class="search-form" action="" method="get">
+								<input type="search" name="search" placeholder="Что ищем?">
+							</form>
+						</div>					
+					</a>	
+				</li>
+						
+				<li>
+					<a href="https://gllacy.ru/login" class="login">Вход
+						<div class="office-login-form">
+							<form class="login-form" action="" method="post">
+								<input type="mail" name="email" placeholder="Электронная почта">
+								<input type="password" name="password" placeholder="Пароль">
+								<button class="btn" type="submit">Войти</button>							
+							</form>
+							<a href="https://gllacy.ru/forgot_password" class="forgot-password">Забыли пароль?</a>
+							<a href="https://gllacy.ru/new_regestration" class="new-regestration">Новая регистрация</a>
+						</div>					
+					</a>
+				</li>		
+				
+				<li>
+					<a href="https://gllacy.ru/bucket" class="bucket">Пусто</a>
+				</li>				
+			</ul>
+			<div class="main-header-contact">
+				<span class="contact-info">С 10 до 20, ежедневно<br>8 812 450-25-25</span>
+			</div>
+		</div>
+	</header>
 
-  </body>
+	<main>
+		<div class="glacy-gallery">
+			<div class="slider">
+				<ul class="slide">
+					<li>
+						<div class="slide-box">
+							<p>Крем-брюле и пломбир с малиновым джемом</p>
+							<a href="#" class="btn">Давайте оба</a>
+						</div>
+					</li>
+					<li>
+						<div class="slide-box">
+							<p>Крем-брюле и пломбир с малиновым джемом</p>
+							<a href="#" class="btn">Давайте оба</a>
+						</div>
+					</li>
+					<li>
+						<div class="slide-box">
+							<p>Крем-брюле и пломбир с малиновым джемом</p>
+							<a href="#" class="btn">Давайте оба</a>
+						</div>
+					</li>
+				</ul>
+
+				<div class="gallery-switcher">
+					<ul class="switcher">
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="special-offer">
+			<article class="first-one">
+				<h2>Малинка даром!</h2>
+				<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+				</p>
+				<a href="#" class="btn">Хочу варенье!</a>
+			</article>
+			<article class="next-one">
+				<h2>Шоколадки даром!</h2>
+				<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+				</p>
+				<a href="#" class="btn">Хочу шоколадки!</a>
+			</article>
+		</div>
+
+		<div class="icecream-bestseller">
+			<div class="example-left-column">
+				<div class="first-icecream">
+					<img src="http://placehold.it/150x100" alt="icecream">
+					<span>310 р/кг</span>
+					<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+				</div>
+
+				<div class="sedond-icecream">
+					<img src="http://placehold.it/150x100" alt="icecream">
+					<span>380 р/кг</span>
+					<p>Сливочно-кофейное с кусочками шоколада</p>
+				</div>
+			</div>
+
+			<div class="example-right-column">
+				<div class="first-icecream">
+					<img src="http://placehold.it/150x100" alt="icecream">
+					<span>355 р/кг</span>
+					<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+				</div>
+
+				<div class="second-icecream">
+					<img src="http://placehold.it/150x100" alt="icecream">
+					<span>415 р/кг</span>
+					<p>Сливочное крем-брюле с карамельной подливкой</p>
+				</div>
+			</div>						
+		</div>
+
+		<div class="main-shop-info">
+			<h1>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+			<section class="features features-left-column">
+				<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+				</p>
+
+				<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья
+				</p>
+			</section>
+			<section class="features features-right-column">
+				<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+				</p>
+
+				<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+				</p>
+			</section>			
+		</div>
+
+		<div class="shop-news">
+			<div class="news blog">
+				<h3>Новое в нашем блоге</h3>
+				<a href="https://gllacy.ru/blog/10_sposobov_servirovki_fruktovuh_sherbetov_k_stoly">10 способов сервировки фрууктовых щербетов к столу</a>
+			</div>
+
+			<div class="news delivery">
+				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
+				</p>
+				<form action="" method="post">
+					<input type="mail" name="email" placeholder="Электронная почта">
+					<button class="btn" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616156114!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1470595776653" width="1200" height="428" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+			<div class="main-contacts">
+				<p>Адрес главного офиса и офлайн магазина:<br>
+				<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+				</p>
+
+				<p>Для заказов по телефону:<br>
+				<span>8 812 450-25-25</span><br>
+				(с 10 до 20 ежедневно)</p>
+				<a href="https://gllacy.ru/feedback_form" class="btn">Форма обратной связи</a>
+					<div class="popup-feedback-form">
+						<span>Мы обязательно вам ответим!</span>
+			 			<form action="" method="post">
+			 				<input type="text" name="your name" placeholder="Как вас зовут?">
+			 				<input type="mail" name="email" placeholder="Ваша почта для ответа">
+			 				<textarea name="comment" id="comment-field" cols="50" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+			 				<button class="btn" type="submit">Отправить</button>
+			 			</form>
+			 		</div>
+			</div>
+			 
+		</div>
+	</main>
+
+	<footer class="main-footer">
+		<div class="footer-social">
+			<a class="social-btn social-btn-tw" href="https://twitter.com/gllacy_shop">Твиттер</a>
+			<a class="social-btn social-btn-inst" href="https://www.instagram.com/gllacy_shop">Инстаграм</a>
+			<a class="social-btn social-btn-fb" href="https://www.facebook.com/gllacy_shop">Фейсбук</a>  
+  			<a class="social-btn social-btn-vk" href="https://vk.com/gllacy_shop">Вконтакте</a>          	        		
+  		</div>
+
+  		<div class="footer-info">
+  			<a href="https://gllacy.ru/for_suppliers">Для поставщиков</a>
+  			<a href="https://gllacy.ru/production">О производстве</a>
+  			<a href="https://gllacy.ru/our_documents">Наши документы</a>
+  			<a href="https://gllacy.ru/environmential_standarts">Экологические стандарты</a>
+  		</div> 
+
+  		<div class="copyright">
+  			<a href="https://htmlacademy.ru">HTMLacademy</a>
+  			<span>Сделано в HTML Academy © 2016</span>
+  		</div> 	
+	</footer>
+	</body>
 </html>
