@@ -10,9 +10,14 @@ h1 .index-headline {
 
 h1 .catalog-headline {
 	font: 35px/41px 'Roboto Bold';
-	color:  #fff;}
+	color: #fff;}
 
 h2 .special-offer-headline{
 	font: 35px/41px 'Roboto Bold';
 	color: #fff;
+}
+
+h2 .news-headline {
+	font: 16px/22px 'Roboto Medium';
+	color: #323232;
 }
