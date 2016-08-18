@@ -3,10 +3,16 @@ body{
 	background: #849d8f;
 }
 
-h1 .index-headline{font: 24px/30px 'Roboto Medium' #323232;}
+h1 .index-headline {
+	font: 24px/30px 'Roboto Medium';
+ 	color: #323232;
+}
 
-h1 .catalog-headline{font: 35px/41px 'Roboto Bold' #fff;}
+h1 .catalog-headline {
+	font: 35px/41px 'Roboto Bold';
+	color:  #fff;}
 
-h2 .special-offer-headline{font: 35px/41px 'Roboto Bold' #fff;}
-
-h3 .news-headline{font: 16px/22px 'Roboto Medium' #323232;}
+h2 .special-offer-headline{
+	font: 35px/41px 'Roboto Bold';
+	color: #fff;
+}
