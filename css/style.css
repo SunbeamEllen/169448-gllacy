@@ -23,6 +23,8 @@ body{
 	width: 550px;
 }
 
+.main-navigation ul{margin: 0px;}
+
 .droplist{
 	display: none;
 }
@@ -98,6 +100,15 @@ main{width: 1146px;
 .news-headline {
 	font: 16px/22px 'Roboto Medium';
 	color: #323232;
+}
+
+.main-contacts{
+	float: right;
+	width: 302px;
+}
+
+.popup-feedback-form{
+	display: none;
 }
 
 .catalog-headline {
