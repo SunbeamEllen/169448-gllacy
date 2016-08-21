@@ -47,6 +47,16 @@ body{
 }
 /*=========HEADER END=========*/
 
+/*=========Index Gllacy=========*/
+.special-offer-item{
+	width: 560px;
+	margin-bottom: 40px;
+}
+
+.strawberry-item{float: left;}
+
+.chocolate-item{float: right;}
+
 .index-headline {
 	font: 24px/30px 'Roboto Medium';
  	color: #323232;
