@@ -57,6 +57,22 @@ body{
 
 .chocolate-item{float: right;}
 
+.icecream-bestseller{width: 1146px;}
+
+.icecream-bestseller-item{
+	float: left;
+	width: 267px;
+	margin-right: 26px;
+}
+
+.icecream-bestseller-item:last-child{
+	margin-right: 0px;
+}
+
+.icecream-bestseller-item>.btn{
+	display: none;
+}
+
 .index-headline {
 	font: 24px/30px 'Roboto Medium';
  	color: #323232;
