@@ -1,7 +1,51 @@
 body{
-	font: 16px/22px 'Roboto Regular' #323232;
+	font: 16px/22px 'Roboto Regular';
+	color: #323232;
 	background: #849d8f;
+	min-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
 }
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/*==========HEADER=========*/
+.main-header{
+	width: 1146px; 
+	padding: 0px 27px;
+	margin-bottom: 12px;
+}
+
+.main-navigation{
+	float: left;
+	width: 550px;
+}
+
+.droplist{
+	display: none;
+}
+
+.user-block{
+	float: right;
+	width: 262px;
+	padding-left: 5px;
+}
+
+.office-search-form{
+	display: none;
+}
+
+.office-login-form{
+	display: none;
+}
+
+.main-header-contact{
+	float: right;
+	width: 167px;
+}
+/*=========HEADER END=========*/
 
 .index-headline {
 	font: 24px/30px 'Roboto Medium';
