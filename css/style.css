@@ -48,6 +48,11 @@ body{
 /*=========HEADER END=========*/
 
 /*=========Index Gllacy=========*/
+.special-offer-headline{
+	font: 35px/41px 'Roboto Bold';
+	color: #fff;
+}
+
 .special-offer-item{
 	width: 560px;
 	margin-bottom: 40px;
@@ -57,10 +62,8 @@ body{
 
 .chocolate-item{float: right;}
 
-.icecream-bestseller{
-	width: 1146px;
-	margin-bottom: 40px;
-}
+.icecream-bestseller, .main-shop-info, 
+.shop-news {margin-bottom: 40px;}
 
 .icecream-bestseller-item{
 	float: left;
@@ -81,16 +84,18 @@ body{
  	color: #323232;
 }
 
-.catalog-headline {
-	font: 35px/41px 'Roboto Bold';
-	color: #fff;}
+.news{width: 560px}
 
-.special-offer-headline{
-	font: 35px/41px 'Roboto Bold';
-	color: #fff;
-}
+.blog{float: left;}
+
+.delivery{float: right;}
 
 .news-headline {
 	font: 16px/22px 'Roboto Medium';
 	color: #323232;
+}
+
+.catalog-headline {
+	font: 35px/41px 'Roboto Bold';
+	color: #fff;
 }
