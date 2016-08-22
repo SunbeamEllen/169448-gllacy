@@ -107,13 +107,19 @@ main{margin-bottom: 36px;}
 .main-contacts{
 	float: right;
 	width: 302px;
+	padding-right: 27px;
 }
 
 .popup-feedback-form{
 	display: none;
 }
+/*=========Index Gllacy End=========*/
 
 .catalog-headline {
 	font: 35px/41px 'Roboto Bold';
 	color: #fff;
 }
+
+/*=========FOOTER=========*/
+
+/*=========FOOTER END=========*/
