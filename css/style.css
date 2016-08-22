@@ -162,6 +162,13 @@ body{
 .fillers{width: 702px;}
 
 .apply{width: 144px;}
+
+.paginator{
+	float: right;
+	width: 190px;
+	margin-top: 42px;
+	margin-bottom: 30px;
+}
 /*=========Catalog Gllacy End=========*/
 
 /*=========FOOTER=========*/
@@ -174,19 +181,17 @@ body{
 .footer-social{
 	float: left;
 	width: 267px;
-	margin-right: 60px;
+	margin-right: 26px;
 }
 
 .footer-info{
 	float: left;
-	width: 328px;
-	margin-left: 72px;
-
+	width: 560px;
+	text-align: center;
 }
 
 .copyright{
 	float: right;
-	width: 189px;
-	padding-left: 78px;
+	width: 267px;
 }
 /*=========FOOTER END=========*/
