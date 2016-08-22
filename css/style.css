@@ -49,12 +49,14 @@ body{
 }
 /*=========HEADER END=========*/
 
-main{width: 1146px; 
-	padding: 0px 27px;
-	margin-bottom: 36px;
-}
+main{margin-bottom: 36px;}
 
 /*=========Index Gllacy=========*/
+.container{
+	width: 1146px; 
+	padding: 0px 27px;
+}
+
 .special-offer-headline{
 	font: 35px/41px 'Roboto Bold';
 	color: #fff;
