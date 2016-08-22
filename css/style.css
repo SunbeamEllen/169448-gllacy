@@ -15,7 +15,6 @@ body{
 .main-header{
 	width: 1146px; 
 	padding: 0px 27px;
-	margin-bottom: 10px;
 }
 
 .main-navigation{
@@ -131,6 +130,8 @@ main{margin-bottom: 36px;}
 .catalog-headline {
 	font: 35px/41px 'Roboto Bold';
 	color: #fff;
+	margin: 0px;
+	margin-bottom: 30px;
 }
 /*=========Catalog Gllacy End=========*/
 
