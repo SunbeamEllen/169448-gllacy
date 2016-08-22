@@ -43,9 +43,8 @@ body{
 	display: none;
 }
 
-.main-header-contact{
-	float: right;
-	width: 167px;
+.popup-checkout{
+	display: none;
 }
 /*=========HEADER END=========*/
 
@@ -55,6 +54,10 @@ main{margin-bottom: 36px;}
 .container{
 	width: 1146px; 
 	padding: 0px 27px;
+}
+.main-header-contact{
+	float: right;
+	width: 167px;
 }
 
 .special-offer-headline{
@@ -115,10 +118,21 @@ main{margin-bottom: 36px;}
 }
 /*=========Index Gllacy End=========*/
 
+/*=========Catalog Gllacy=========*/
+.breadcrumbs{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.breadcrumbs a{
+	float: left;
+}
+
 .catalog-headline {
 	font: 35px/41px 'Roboto Bold';
 	color: #fff;
 }
+/*=========Catalog Gllacy End=========*/
 
 /*=========FOOTER=========*/
 .main-footer{
