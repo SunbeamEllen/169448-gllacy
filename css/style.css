@@ -47,7 +47,10 @@ body{
 }
 /*=========HEADER END=========*/
 
-main{margin-bottom: 36px;}
+main{
+	padding: 0px 27px;
+	margin-bottom: 36px;
+}
 
 /*=========Index Gllacy=========*/
 .container{
@@ -118,15 +121,20 @@ main{margin-bottom: 36px;}
 /*=========Index Gllacy End=========*/
 
 /*=========Catalog Gllacy=========*/
+.info{
+	margin-bottom: 10px;
+}
+
 .breadcrumbs{
 	display: inline-block;
-	margin-bottom: 10px;
 }
 
 .breadcrumbs a{
 	float: left;
 }
-
+.choice-zone{
+	width: 1146px;
+}
 .catalog-headline {
 	font: 35px/41px 'Roboto Bold';
 	color: #fff;
@@ -135,6 +143,7 @@ main{margin-bottom: 36px;}
 }
 
 .ice-cream-selection{
+	float: left;
 	width: 859px;
 	padding-right: 20px;
 	margin-bottom: 34px;
@@ -142,6 +151,10 @@ main{margin-bottom: 36px;}
 
 .sorting-part{
 	float: left;
+	margin: 0px;
+	border: none;
+	padding: 0px;
+	margin-bottom: 16px;
 	margin-right: 14px;
 }
 
