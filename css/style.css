@@ -34,6 +34,11 @@ body{
 	padding-left: 5px;
 }
 
+.main-header-contact{
+	float: right;
+	width: 167px;
+}
+
 .office-search-form{
 	display: none;
 }
@@ -51,10 +56,6 @@ body{
 .container{
 	width: 1146px; 
 	padding: 0px 27px;
-}
-.main-header-contact{
-	float: right;
-	width: 167px;
 }
 
 .special-offer-headline{
