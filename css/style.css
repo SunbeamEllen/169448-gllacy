@@ -139,6 +139,21 @@ main{margin-bottom: 36px;}
 	padding-right: 20px;
 	margin-bottom: 34px;
 }
+
+.sorting-part{
+	float: left;
+	margin-right: 14px;
+}
+
+.sorting{width: 193px;}
+
+.range{width: 218px;}
+
+.fatness{width: 415px; margin-right: 5px;}
+
+.fillers{width: 702px;}
+
+.apply{width: 144px;}
 /*=========Catalog Gllacy End=========*/
 
 /*=========FOOTER=========*/

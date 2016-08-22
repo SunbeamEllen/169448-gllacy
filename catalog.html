@@ -70,7 +70,7 @@
 		<div class="choice-zone">
 			<h1 class="catalog-headline">Сливочное мороженое</h1>
 			<form class="ice-cream-selection clearfix" action="" method="post">
-				<fieldset class="sorting-part">
+				<fieldset class="sorting-part sorting">
 					<legend>Сортировка:</legend>
 						<select name="sorting">
 							<option value="criterion">по популярности</option>
@@ -80,12 +80,12 @@
 						</select>									
 				</fieldset>
 
-				<fieldset class="sorting-part">
+				<fieldset class="sorting-part range">
 					<legend>Цена: 100 руб. - 500 руб.</legend>
 						<input type="range" name="price">
 				</fieldset>
 
-				<fieldset class="sorting-part">
+				<fieldset class="sorting-part fatness">
 					<legend>Жирность:</legend>
 					<label><input type="radio" name="fatness">0%</label>				
 					<label><input type="radio" name="fatness" checked="">до 10%</label>
@@ -93,7 +93,7 @@
 					<label><input type="radio" name="fatness">выше 30%</label>		
 				</fieldset>
 
-				<fieldset class="sorting-part">
+				<fieldset class="sorting-part fillers">
 					<label><input type="checkbox" checked="">шоколадные</label>
 					<label><input type="checkbox" checked="">сахарные присыпки</label>
 					<label><input type="checkbox">фрукты</label>
