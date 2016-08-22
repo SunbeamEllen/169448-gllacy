@@ -124,6 +124,7 @@ main{margin-bottom: 36px;}
 .main-footer{
 	width: 1146px;
 	padding: 0px 27px;
+	padding-bottom: 25px;
 }
 
 .footer-social{
@@ -132,14 +133,14 @@ main{margin-bottom: 36px;}
 	margin-right: 60px;
 }
 
-.footr-info{
+.footer-info{
 	float: left;
 	width: 328px;
 	margin-left: 72px;
 
 }
 
-.coopyright{
+.copyright{
 	float: right;
 	width: 189px;
 	padding-left: 78px;
