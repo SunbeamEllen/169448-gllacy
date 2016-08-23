@@ -1,11 +1,19 @@
 body{
 	font: 16px/22px 'Roboto Regular';
 	color: #323232;
-	background: #849d8f;
-	width: 1200px;
-	margin: 0 auto;
-	padding: 0;
+	margin: 0;
 }
+
+#wrapper{
+	background: url(../img/Icecream_gallery_1.png) no-repeat #849d8f; 
+}
+
+.container{
+	width: 1146px; 
+	padding: 0px 27px;
+	margin: 0 auto;
+}
+
 .clearfix::after{
 	content: "";
 	display: table;
@@ -13,8 +21,11 @@ body{
 }
 /*==========HEADER=========*/
 .main-header{
-	width: 1146px; 
-	padding: 0px 27px;
+	position: relative;
+}
+
+.logo{
+	float: left;
 }
 
 .main-navigation{
@@ -35,8 +46,10 @@ body{
 }
 
 .main-header-contact{
-	float: right;
-	width: 167px;
+	position: absolute;
+	bottom: 0px;;
+	right: 500px;
+	/*width: 167px;*/
 }
 
 .office-search-form{
@@ -53,11 +66,6 @@ body{
 /*=========HEADER END=========*/
 
 /*=========Index Gllacy=========*/
-.container{
-	width: 1146px; 
-	padding: 0px 27px;
-}
-
 .special-offer-headline{
 	font: 35px/41px 'Roboto Bold';
 	color: #fff;
@@ -66,11 +74,15 @@ body{
 .special-offer-item{
 	width: 560px;
 	margin-bottom: 40px;
+	float: left;
+	margin-right: 26px;
 }
 
-.strawberry-item{float: left;}
+.special-offer-item:nth-child(2n){margin-right: 0px;}
 
-.chocolate-item{float: right;}
+.strawberry-item{}
+
+.chocolate-item{}
 
 .icecream-bestseller, .main-shop-info, 
 .shop-news {margin-bottom: 40px;}
@@ -128,6 +140,7 @@ body{
 .breadcrumbs a{
 	float: left;
 }
+
 .choice-zone{
 	width: 1146px;
 }
@@ -139,8 +152,6 @@ body{
 }
 
 .ice-cream-selection{
-	float: left;
-	width: 859px;
 	padding-right: 20px;
 	margin-bottom: 34px;
 }
@@ -162,7 +173,7 @@ body{
 
 .fillers{width: 702px;}
 
-.apply{width: 144px;}
+.apply{width: 144px; float: left;}
 
 .paginator{
 	float: right;
@@ -174,9 +185,8 @@ body{
 
 /*=========FOOTER=========*/
 .main-footer{
-	width: 1146px;
-	margin-top: 19px;
 	padding: 0px 27px;
+	padding-top: 19px;
 	padding-bottom: 25px;
 }
 
