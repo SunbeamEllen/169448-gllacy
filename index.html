@@ -3,6 +3,8 @@
 	<head>
     	<meta charset="utf-8">
     	<title>HTML Academy: Глейси</title>
+    	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
+    	<link href="css/normalize.css" rel="stylesheet">
     	<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
@@ -10,18 +12,18 @@
 			<header class="main-header clearfix">
 				<div class="container">
 					<a href="#" class="logo">
-						<img src="http://placehold.it/150x100" alt="Gllacy Shop">
+						<img src="img/logo.png" alt="Gllacy Shop">
 					</a>
 					<nav class="main-navigation">
 						<ul>
 							<li>
 								<a href="https://gllacy.ru/catalog">Каталог</a>						
-								<ul class="droplist">
-									<li><a href="https://gllacy.ru/catalog/novelty">Новинки</a></li>
-									<li><a href="https://gllacy.ru/catalog/creamy">Сливочное</a></li>
-									<li><a href="https://gllacy.ru/catalog/sherbets">Щербеты</a></li>
-									<li><a href="https://gllacy.ru/catalog/fruit_ice">Фруктовый лед</a></li>
-									<li><a href="https://gllacy.ru/catalog/melorin">Мелорин</a></li>
+								<ul class="drop">
+									<li><a class="droplist novelty" href="https://gllacy.ru/catalog/novelty">Новинки</a></li>
+									<li><a class="droplist" href="https://gllacy.ru/catalog/creamy">Сливочное</a></li>
+									<li><a class="droplist" href="https://gllacy.ru/catalog/sherbets">Щербеты</a></li>
+									<li><a class="droplist" href="https://gllacy.ru/catalog/fruit_ice">Фруктовый лед</a></li>
+									<li><a class="droplist" href="https://gllacy.ru/catalog/melorin">Мелорин</a></li>
 								</ul>						
 							</li>
 							<li>
@@ -34,7 +36,7 @@
 					</nav>
 
 					<div class="user-block">				
-						<a href="https://gllacy.ru/search" class="search">Поиск</a>	
+						<a href="https://gllacy.ru/search" class="search"></a>	
 							<div class="office-search-form">
 								<form class="search-form" action="" method="get">
 									<input type="search" name="search" placeholder="Что ищем?">
@@ -103,7 +105,7 @@
 					</div>
 
 					<div class="special-offer clearfix">
-						<article class="special-offer-item strawberry-item">
+						<article class="special-offer-item strawberry-item clearfix">
 							<h2 class="special-offer-headline">Малинка даром!</h2>
 							<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
 							</p>
@@ -121,7 +123,7 @@
 					<div class="icecream-bestseller clearfix">			
 						<div class="icecream-bestseller-item">
 							<div class="item-position">
-								<img src="http://placehold.it/150x100" alt="icecream">
+								<img src="img/Orange_icecream.png" alt="icecream">
 								<span class="icecream-price">310 р/кг</span>
 							</div>
 							<a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -130,7 +132,7 @@
 
 						<div class="icecream-bestseller-item">
 							<div class="item-position">
-								<img src="http://placehold.it/150x100" alt="icecream">
+								<img src="img/Chocolate_icecream.png" alt="icecream">
 								<span class="icecream-price">380 р/кг</span>
 							</div>
 							<a href="">Сливочно-кофейное с кусочками шоколада</a>
@@ -139,7 +141,7 @@
 			
 						<div class="icecream-bestseller-item">
 							<div class="item-position">
-								<img src="http://placehold.it/150x100" alt="icecream">
+								<img src="img/Strawberry_icecream.png" alt="icecream">
 								<span class="icecream-price">355 р/кг</span>
 							</div>
 							<a href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -148,7 +150,7 @@
 
 						<div class="icecream-bestseller-item">
 							<div class="item-position">
-								<img src="http://placehold.it/150x100" alt="icecream">
+								<img src="img/Cream_brulee.png" alt="icecream">
 								<span class="icecream-price">415 р/кг</span>
 							</div>							
 							<a href="">Сливочное крем-брюле с карамельной подливкой</a>
@@ -157,7 +159,7 @@
 					</div>
 
 					<div class="main-shop-info">
-						<h1 class="index-headline">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+						<h1 class="index-headline">Магазин Глейси – это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
 			
 						<p class="advantages advantages-icon-icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
 						</p>
