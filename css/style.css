@@ -155,9 +155,12 @@ body{
 	background-color: rgba(53,53,53,0.2);
 }
 
-.navigation-list .novelty:hover{
-	border-radius: 0;
-	background-color: #f8f7f4;
+.navigation-list:hover .novelty:hover{
+	border-radius: 6px 6px 0px 0px;
+}
+
+.navigation-list:hover .last:hover{
+	border-radius: 0px 0px 6px 6px;
 }
 
 .user-block{
@@ -311,6 +314,7 @@ input[type="password"]{
 
 .office-login-form a{
 	display: inline-block;
+	vertical-align: top;
 	position: absolute;
 	font-weight: 400;
 	font-size: 13px;
@@ -422,12 +426,13 @@ input[type="password"]{
 
 }
 
-.icecream-bestseller, .main-shop-info, 
-.shop-news {margin-bottom: 40px;}
+.main-shop-info, .shop-news {margin-bottom: 40px;}
+
+.icecream-bestseller{margin-bottom: 38px;}
 
 .icecream-bestseller-item{
-	float: left;
-	
+	position: relative;
+	float: left;	
 	width: 267px;
 	margin-right: 26px;
 }
@@ -447,9 +452,23 @@ input[type="password"]{
 	text-decoration: none;
 }
 
+.icecream-bestseller-item a:hover{
+	color: #ffbc9e;
+}
+
 .icecream-bestseller-item>.btn{
 	display: none;
 }
+.quick-view>.btn{display: none;}
+/*.quick-view{
+	display: none;
+	position: absolute;
+	z-index: 4;
+	width: 327px;
+	height: 442px;
+	background-color: rgba(248,247,244,0.3);
+	box-shadow: 0px 10px 0px 0px rgba(0,0,0,0.4);
+}*/
 
 .item-position{
 	position: relative;
@@ -467,10 +486,26 @@ input[type="password"]{
 
 .icecream-price{
 	position: absolute;
-    bottom: 19px;
+    bottom: 71px;
     font-size: 45px;
     line-height: 45px;
     left: 1px;
+}
+
+.icecream-price img{
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	bottom: 4px;
+	left: 80px;
+}
+
+.kg{
+	position: absolute;
+	top: 5px;
+	right: -77px;
+	font-size: 30px;
+	line-height: 45px;
 }
 
 .main-shop-info{
@@ -492,6 +527,7 @@ input[type="password"]{
 
 .advantages{
 	display: inline-block;
+	vertical-align: top;
 	margin: 0;
 	width: 483px;
 	font-weight: 500;
@@ -524,15 +560,59 @@ input[type="password"]{
 	background: url(../img/Thermometer.png) no-repeat 0% 0%;
 }
 
-.news{width: 560px}
+.news{
+	width: 542px;
+	border-radius: 16px;
 
-.blog{float: left;}
+}
 
-.delivery{float: right;}
+.blog{
+	float: left;
+	background: url(../img/Strawberry_background.jpg) no-repeat;
+	padding: 24px 0px 80px 20px;
+}
 
 .news-headline {
-	font: 16px/22px 'Roboto Medium';
+	font-size: 16px;
+	line-height: 22px;
 	color: #323232;
+	margin: 0px 0px 4px 0px;
+}
+
+.blog a{
+	display: inline-block;
+	font-size: 24px;
+	line-height: 30px;
+	color: #323232;
+	text-decoration: underline;
+	margin: 0px 196px 0px 0px;
+}
+
+.delivery{
+	float: right;
+	background: url(../img/Post_background.png) no-repeat;
+	padding: 5px;
+}
+
+.delivery-info{
+	background-color: #f8f7f4;
+	border-radius: 16px;
+	padding: 33px 22px 0px 21px;
+}
+
+.delivery-info p{
+	margin: 0px 0px 0px 0px;
+	font-size: 16px;
+	line-height: 22px;
+	color: #5a5a5a;
+}
+
+.delivery-form input [type="mail"]{
+	float: left;
+}
+
+.delivery-form .btn{
+	float: right;
 }
 
 .main-contacts{
