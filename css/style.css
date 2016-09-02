@@ -729,7 +729,7 @@ input[type="password"]{
 /*=========FOOTER=========*/
 .main-footer{
 	padding: 0px 27px;
-	padding-top: 28px;
+	padding-top: 14px;
 	padding-bottom: 25px;
 }
 
@@ -738,6 +738,7 @@ input[type="password"]{
 	width: 267px;
 	margin-right: 26px;
 	margin-left: 2px;
+	padding-top: 14px;
 }
 
 .social-btn{
@@ -766,13 +767,61 @@ input[type="password"]{
 
 .footer-info{
 	float: left;
-	width: 560px;
-	text-align: center;
+	width: 363px;
+	padding-left: 106px;
+	padding-right: 91px;
+	padding-top: 14px;
+}
+.footer-info .providers{
+	background: url(../img/Heart.png) no-repeat 0% 50%;
+	font-weight: 700;
+}
+
+.footer-info a{
+	display: inline-block;
+	vertical-align: top;
+	min-width: 111px;
+	padding: 0px 0px 0px 22px;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+.footer-info a:hover {
+    color: #ffbc9e;
+}
+
+.footer-info a:nth-child(odd){
+	margin-right: 10px;
 }
 
 .copyright{
 	float: right;
 	width: 267px;
+	background: url(../img/HTMLACADEMY_logo.png) no-repeat;
+}
+
+.footer-copyright {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 36px 0px 0px 0px;
+	color: #fefefe;
+}
+
+.copyright .academy{
+	display: inline-block;
+	font-weight: 400px;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 0px 0px 0px 0px;
+	color: #fefefe;
+}
+
+.copyright .academy:hover{
+	color: #ffbc9e;
 }
 
 /*=========FOOTER END=========*/
