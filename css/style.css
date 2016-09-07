@@ -630,7 +630,7 @@ input[type="password"]{
 	z-index: 10;
 }
 
-.item-position::before{
+.item-bestseller-position::before{
 	position: absolute;
 	content: '';
 	width: 61px;
