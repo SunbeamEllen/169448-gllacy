@@ -1,17 +1,25 @@
-functiion initialize(){
-	var mapOptions = {
-		zoom: 15;
-		center: new google.maps.LatLng(59.9387969,30.3208893)
-	}
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map-canvas', {
+            center: [59.938631, 30.323055],
+            zoom: 15
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Собственный значок метки',
+            balloonContent: 'Это красивая метка'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/Pin.png',
+            // Размеры метки.
+            iconImageSize: [218, 142],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-3, -42]
+        });
 
-	var map = new google.maps.Map(Document.getElementById('map-canvas'),mapOptions);
-	var image = 
-	"../img/Pin.png";
-	var myLatLng = new google.maps.LatLng(59.9387969,30.3208893);
-	var beachMarker = new google.maps.Marker ({
-		position: myLatLng,
-		map: map,
-		icon: image
-	})
-}
-google.maps.event.addDomListener(window, 'load', initialize);
+    myMap.geoObjects.add(myPlacemark);
+});
