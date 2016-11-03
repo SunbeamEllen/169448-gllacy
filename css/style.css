@@ -36,6 +36,11 @@ body>input[type="radio"] {
   background-image: url(../img/Icecream_gallery_3.png);
 }
 
+.wrapper-catalog{
+	min-width: 940px;
+	background-color: #849d8f;
+}
+
 .container{
 	width: 1146px; 
 	padding: 0px 27px;
@@ -568,16 +573,16 @@ input[type="password"]{
 
 .main-shop-info, .shop-news {margin-bottom: 39px;}
 
-.icecream-bestseller{margin-bottom: 38px;}
+.bestseller{margin-bottom: 38px;}
 
-.icecream-bestseller-item{
+.bestseller-item{
 	position: relative;
 	float: left;	
 	width: 267px;
 	margin-right: 26px;
 }
 
-.icecream-bestseller-item:hover::before{
+.bestseller-item:hover::before{
 	position: absolute;
 	content: '';
 	width: 293px;
@@ -590,7 +595,7 @@ input[type="password"]{
 	left: -14px;
 }
 
-.icecream-bestseller-item>.btn{
+.bestseller-item>.btn{
 	display: none;
 	position: absolute;
 	bottom: -53px;
@@ -601,11 +606,11 @@ input[type="password"]{
     padding: 10px 11px 10px 14px;
 }
 
-.icecream-bestseller-item:hover .btn{
+.bestseller-item:hover .btn{
 	display: block;
 }
 
-.icecream-bestseller-item:last-child{
+.bestseller-item:last-child{
 	margin-right: 0px;
 }
 
@@ -630,7 +635,7 @@ input[type="password"]{
 	z-index: 10;
 }
 
-.item-bestseller-position::before{
+.icecream-position::before{
 	position: absolute;
 	content: '';
 	width: 61px;
