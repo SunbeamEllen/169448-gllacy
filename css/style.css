@@ -272,14 +272,23 @@ input[type="search"]{
 	color: #999999;
 }
 
-/* active state */
-.form-input:focus ~ .search-label{
-	top:-20px;
-	font-size:14px;
-	color: #009688;
+.search-input:hover{
+	border: 2px solid #c7c6c5;
 }
 
-.search-label{
+.search-input:focus{
+	border: 2px solid #5b9ddf;
+}
+
+/* active state */
+.search-input:focus ~ .search-label{
+	top:-26px;
+	font-size: 14px;
+	color: #8fbdec;
+}
+
+.search-label, .email-label, .password-label{
+	padding: 6px 0px 0px 12px;
 	color:#999; 
 	font-size:14px;
 	font-weight:normal;
@@ -338,6 +347,25 @@ input[type="mail"]{
 	border-radius: 5px;
 }
 
+.email-label{
+	padding: 25px 0px 0px 29px;
+}
+
+.email-input:hover{
+	border: 2px solid #c7c6c5;
+}
+
+.email-input:focus{
+	border: 2px solid #5b9ddf;
+}
+
+
+.email-input:focus ~ .email-label{
+	top:-26px;
+	font-size:14px;
+	color: #5b9ddf;
+}
+
 input[type="password"]{
 	display: block;
 	box-sizing: border-box;
@@ -350,6 +378,25 @@ input[type="password"]{
 	color: #999;	
 	margin-bottom: 20px;
 	border-radius: 5px;
+}
+
+.password-label{
+	padding: 101px 0px 0px 29px;
+}
+
+.password-input:hover{
+	border: 2px solid #c7c6c5;
+}
+
+.password-input:focus{
+	border: 2px solid #5b9ddf;
+}
+
+
+.password-input:focus ~ .password-label{
+	top:-26px;
+	font-size:14px;
+	color: #5b9ddf;
 }
 
 .btn{
@@ -770,7 +817,7 @@ input[type="password"]{
 	color: #5a5a5a;
 }
 
-.delivery-form .mail{
+.delivery-form .delivery-mail{
 	float: left;
 	display: block;
 	box-sizing: border-box;

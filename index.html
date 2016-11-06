@@ -43,8 +43,8 @@
 							<a href="https://gllacy.ru/search" class="search"></a>	
 							<div class="office-search-form">
 								<form class="search-form" action="" method="get">
-									<input class="form-input" type="search" name="search">
-									<label class="search-label" for="">Что ищем?</label>
+									<input class="search-input" type="search" name="search" id="search-input">
+									<label class="search-label" for="search-input">Что ищем?</label>
 								</form>
 							</div>	
 						</div>				
@@ -53,8 +53,10 @@
 							<a href="https://gllacy.ru/login" class="login">Вход</a>
 							<div class="office-login-form">
 								<form class="login-form" action="" method="post">
-									<input type="mail" name="email" placeholder="Электронная почта">
-									<input type="password" name="password" placeholder="Пароль">
+									<input class="email-input" type="mail" name="email" id="email-input">
+									<label class="email-label" for="email-input">Электронная почта</label>
+									<input class="password-input" type="password" name="password" id="password-input">
+									<label class="password-label" for="">Пароль</label>
 									<button class="btn" type="submit">Войти</button>							
 								</form>
 								<a href="https://gllacy.ru/forgot_password" class="forgot-password">Забыли пароль?</a>
@@ -177,7 +179,7 @@
 								<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
 								</p>
 								<form action="" class="delivery-form clearfix" method="post">
-									<input type="mail" name="email" placeholder="Электронная почта" class="mail">
+									<input class="delivery-mail" type="mail" name="email" placeholder="Электронная почта">
 									<button class="btn" type="submit">Отправить</button>
 								</form>
 							</div>							
