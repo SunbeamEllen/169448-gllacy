@@ -9,9 +9,7 @@ body{
 	background-color: #849d8f;
 }
 
-body>input[type="radio"] {
-  display: none;
-}
+body>input[type="radio"]{display: none;}
 
 .wrapper{
 	min-width: 940px;
@@ -23,18 +21,14 @@ body>input[type="radio"] {
 }
 
 .wrapper:before,
-.wrapper:after {
+.wrapper:after{
   content: "";
   visibility: hidden;
 }
 
-.wrapper:before {
-  background-image: url(../img/Icecream_gallery_2.png);
-}
+.wrapper:before{background-image: url(../img/Icecream_gallery_2.png);}
 
-.wrapper:after {
-  background-image: url(../img/Icecream_gallery_3.png);
-}
+.wrapper:after{background-image: url(../img/Icecream_gallery_3.png);}
 
 .wrapper-catalog{
 	min-width: 940px;
@@ -53,9 +47,7 @@ body>input[type="radio"] {
 	clear: both;
 }
 /*==========HEADER=========*/
-.main-header{
-	position: relative;
-}
+.main-header{position: relative;}
 
 .logo{
 	float: left;
@@ -115,9 +107,7 @@ body>input[type="radio"] {
 	box-shadow: inset 0px 2px 2px  0px #696969;
 }
 
-.navigation-list{
-	min-height: 50px;
-}
+.navigation-list{min-height: 50px;}
 
 .active-list{
 	color: #fff;
@@ -142,7 +132,7 @@ body>input[type="radio"] {
 	box-shadow: -2px 11px 20px 0px rgba(0,0,0,0.65);
 }
 
-.drop li {
+.drop li{
 	width: 100%;
 	padding: 0;
 }
@@ -255,9 +245,11 @@ body>input[type="radio"] {
 	box-shadow: -2px 11px 20px 0px rgba(0,0,0,0.65);
 }
 
-.search-form{
+.search-form, .login-form, .delivery-form{
 	position: relative;
 }
+
+input{outline: none;}
 
 input[type="search"]{
 	display: block;
@@ -274,36 +266,40 @@ input[type="search"]{
 
 .search-input:hover{
 	border: 2px solid #c7c6c5;
+	margin-top: -2px;
 }
 
 .search-input:focus{
 	border: 2px solid #5b9ddf;
+	margin-top: -2px;
 }
 
 .search-input:focus ~ .search-label{
-	top:-26px;
+	top:-20px;
 	font-size: 14px;
 	color: #8fbdec;
 }
 
 .search-input:valid{
 	font-weight: bold;
+	color: #323232;
 	border: 1px solid  #d3d3d2;
+	margin-top: -2px;
 }
 
 .search-input:valid ~ .search-label{
-	top:-26px;
+	top:-20px;
 	font-size: 14px;
+	color: #999;
 }
 
-.search-label, .email-label, .password-label{
-	padding: 6px 0px 0px 12px;
+.search-label, .email-label, .password-label, .delivery-label{
 	color:#999; 
 	font-size:14px;
 	font-weight:normal;
 	position:absolute;
-	left:5px;
-	top:10px;
+	left: 14px;
+	top: 17px;
 	transition:0.2s ease all; 
 	-moz-transition:0.2s ease all; 
 	-webkit-transition:0.2s ease all;
@@ -356,23 +352,32 @@ input[type="mail"]{
 	border-radius: 5px;
 }
 
-.email-label{
-	padding: 25px 0px 0px 29px;
-}
-
-.email-input:hover{
+.email-input:hover, .password-input:hover{
 	border: 2px solid #c7c6c5;
+	margin-top: -2px;
 }
 
-.email-input:focus{
+.email-input:focus, .password-input:focus{
 	border: 2px solid #5b9ddf;
+	margin-top: -2px;
 }
-
 
 .email-input:focus ~ .email-label{
-	top:-26px;
+	top: -20px;
 	font-size:14px;
 	color: #5b9ddf;
+}
+
+.email-input:valid{
+	font-weight: bold;
+	color: #323232;
+	border: 1px solid  #d3d3d2;
+}
+
+.email-input:valid ~ .email-label{
+	top: -20px;
+	font-size: 14px;
+	color: #999;
 }
 
 input[type="password"]{
@@ -389,23 +394,24 @@ input[type="password"]{
 	border-radius: 5px;
 }
 
-.password-label{
-	padding: 101px 0px 0px 29px;
-}
-
-.password-input:hover{
-	border: 2px solid #c7c6c5;
-}
-
-.password-input:focus{
-	border: 2px solid #5b9ddf;
-}
-
+.password-label{top: 91px;}
 
 .password-input:focus ~ .password-label{
-	top:-26px;
+	top: 54px;
 	font-size:14px;
 	color: #5b9ddf;
+}
+
+.password-input:valid{
+	font-weight: bold;
+	color: #323232;
+	border: 1px solid  #d3d3d2;
+}
+
+.password-input:valid ~ .password-label{
+	top: 54px;
+	font-size: 14px;
+	color: #999;
 }
 
 .btn{
@@ -447,7 +453,7 @@ input[type="password"]{
 	right: 32px;
 }
 
-.new-regestration {
+.new-regestration{
 	bottom: 27px;
 	right: 17px;
 }
@@ -490,7 +496,6 @@ input[type="password"]{
 	display: none;
 }
 
-
 .info{
 	margin-bottom: 10px;
 }
@@ -530,7 +535,7 @@ input[type="password"]{
 	margin-bottom: 4px;
 }
 
-.slider-controls {
+.slider-controls{
   position: absolute;
   bottom: 62px;
   left: 0;
@@ -538,8 +543,7 @@ input[type="password"]{
   font-size: 0;
 }
 
-
-.slider-controls label {
+.slider-controls label{
   display: inline-block;
   width: 17px;
   height: 17px;
@@ -571,7 +575,6 @@ input[type="password"]{
   background-color: #9d8b84;
   background-image: url(../img/Icecream_gallery_3.png);
 }
-
 
 #btn-1:checked ~ .wrapper label[for="btn-1"],
 #btn-2:checked ~ .wrapper label[for="btn-2"],
@@ -635,8 +638,10 @@ input[type="password"]{
 	float: left;	
 	width: 267px;
 	margin-right: 26px;
-	
+	z-index: 1;	
 }
+
+.bestseller-item:hover{z-index: 2;}
 
 .bestseller-item:hover::before{
 	position: absolute;
@@ -649,7 +654,7 @@ input[type="password"]{
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
 	top: -6px;
 	left: -14px;
-	
+	z-index: 3;	
 }
 
 .bestseller-item>.btn{
@@ -665,6 +670,7 @@ input[type="password"]{
 
 .bestseller-item:hover .btn{
 	display: block;
+	z-index: 4;
 }
 
 .bestseller-item:last-child{
@@ -682,14 +688,13 @@ input[type="password"]{
 	text-decoration: none;
 }
 
-.icecream-item:hover{
-	color: #ffbc9e;
-}
+.icecream-item:hover{color: #ffbc9e;}
 
+.bestseller-item:hover .item-position{z-index: 5;} 
 
 .item-position{
 	position: relative;
-	z-index: 10;
+	z-index: 6;
 }
 
 .icecream-position::before{
@@ -757,9 +762,7 @@ input[type="password"]{
 	padding-top: 15px;
 }
 
-.advantages:nth-child(odd){
-	margin-right: 0px;
-}
+.advantages:nth-child(odd){margin-right: 0px;}
 
 .advantages-icon-icecream{
 	background: url(../img/Icecream_icon.png) no-repeat 0% 0%;
@@ -780,7 +783,6 @@ input[type="password"]{
 .news{
 	width: 548px;
 	border-radius: 16px;
-
 }
 
 .blog{
@@ -828,7 +830,7 @@ input[type="password"]{
 	color: #5a5a5a;
 }
 
-.delivery-form .delivery-mail{
+.delivery-form .delivery-input{
 	float: left;
 	display: block;
 	box-sizing: border-box;
@@ -843,14 +845,45 @@ input[type="password"]{
 	border-radius: 5px;
 }
 
+.delivery-label{
+	left: 14px;
+	top: 12px;
+}
+
+.delivery-input:hover{
+	border: 2px solid #c7c6c5;
+	margin-top: -2px;
+}
+
+.delivery-input:focus{
+	border: 2px solid #5b9ddf;
+	margin-top: -2px;
+}
+
+.delivery-input:focus ~ .delivery-label{
+	top:-20px;
+	font-size: 14px;
+	color: #8fbdec;
+}
+
+.delivery-input:valid{
+	font-weight: bold;
+	color: #323232;
+	border: 1px solid  #d3d3d2;
+}
+
+.delivery-input:valid ~ .delivery-label{
+	top:-20px;
+	font-size: 14px;
+	color: #999;
+}
+
 .delivery-form .btn{
 	float: right;
 	padding: 9px 17px;
 }
 
-.map{
-	position: relative;
-}
+.map{position: relative;}
 
 .map-canvas{
 	width: 100%;
@@ -977,9 +1010,7 @@ input[type="password"]{
     opacity: 0.8;
 }
 
-.social-btn:hover{
-	opacity: 1;
-}
+.social-btn:hover{opacity: 1;}
 
 .social-btn:active{
 	opacity: 0.8;
@@ -1021,9 +1052,7 @@ input[type="password"]{
 	color: #fff;
 	text-decoration: none;
 }
-.footer-info a:hover {
-    color: #ffbc9e;
-}
+.footer-info a:hover{color: #ffbc9e;}
 
 .footer-info a:nth-child(odd){
 	margin-right: 10px;
@@ -1047,8 +1076,7 @@ input[type="password"]{
 	font-size: 12px;
 	line-height: 18px;
 	color: #fefefe;
-	padding-left: 74px;
-	
+	padding-left: 74px;	
 }
 
 .copyright .academy{
@@ -1062,5 +1090,4 @@ input[type="password"]{
 .copyright .academy:hover{
 	color: #ffbc9e;
 }
-
 /*=========FOOTER END=========*/
