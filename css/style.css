@@ -249,29 +249,33 @@ body>input[type="radio"]{display: none;}
 	position: relative;
 }
 
-input{outline: none;}
-
-input[type="search"]{
+input{
 	display: block;
-	width: 311px;
-	padding: 15px 0px 15px 14px;
-	border-radius: 4px;
-	border: 1px solid #d3d3d2;
 	box-sizing: border-box;
-	font-weight: 400;
+	outline: none;
+	padding: 15px 0px 15px 14px;
+	border-radius: 5px;
+	border: 1px solid #d3d3d2;
+	font-weight: bold;
 	font-size: 14px;
 	line-height: 24px;
-	color: #999999;
+	color: #323232;
+}
+
+input[type="search"]{	
+	width: 311px;	
 }
 
 .search-input:hover{
 	border: 2px solid #c7c6c5;
 	margin-top: -2px;
+	padding: 14px 0px 15px 13px;
 }
 
 .search-input:focus{
 	border: 2px solid #5b9ddf;
 	margin-top: -2px;
+	padding: 14px 0px 15px 13px;
 }
 
 .search-input:focus ~ .search-label{
@@ -280,17 +284,9 @@ input[type="search"]{
 	color: #8fbdec;
 }
 
-.search-input:valid{
-	font-weight: bold;
-	color: #323232;
-	border: 1px solid  #d3d3d2;
-	margin-top: -2px;
-}
-
 .search-input:valid ~ .search-label{
 	top:-20px;
 	font-size: 14px;
-	color: #999;
 }
 
 .search-label, .email-label, .password-label, .delivery-label{
@@ -339,15 +335,7 @@ input[type="search"]{
 }
 
 input[type="mail"]{
-	display: block;
-	box-sizing: border-box;
 	width: 241px;
-	padding: 15px 0px 14px 14px;
-	border: 1px solid #d3d3d2;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
-	color: #999;
 	margin-bottom: 20px;
 	border-radius: 5px;
 }
@@ -363,33 +351,18 @@ input[type="mail"]{
 }
 
 .email-input:focus ~ .email-label{
-	top: -20px;
+	top: -22px;
 	font-size:14px;
 	color: #5b9ddf;
 }
 
-.email-input:valid{
-	font-weight: bold;
-	color: #323232;
-	border: 1px solid  #d3d3d2;
-}
-
 .email-input:valid ~ .email-label{
-	top: -20px;
+	top: -22px;
 	font-size: 14px;
-	color: #999;
 }
 
 input[type="password"]{
-	display: block;
-	box-sizing: border-box;
-	width: 241px;
-	padding: 15px 0px 14px 14px;
-	border: 1px solid #d3d3d2;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
-	color: #999;	
+	width: 241px;	
 	margin-bottom: 20px;
 	border-radius: 5px;
 }
@@ -402,16 +375,9 @@ input[type="password"]{
 	color: #5b9ddf;
 }
 
-.password-input:valid{
-	font-weight: bold;
-	color: #323232;
-	border: 1px solid  #d3d3d2;
-}
-
 .password-input:valid ~ .password-label{
 	top: 54px;
 	font-size: 14px;
-	color: #999;
 }
 
 .btn{
@@ -832,17 +798,11 @@ input[type="password"]{
 
 .delivery-form .delivery-input{
 	float: left;
-	display: block;
-	box-sizing: border-box;
 	width: 368px;
 	padding: 9px 0px 9px 14px;
-	border: 1px solid #d3d3d2;
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	color: #999;
 	margin: 0px;
-	border-radius: 5px;
 }
 
 .delivery-label{
@@ -861,21 +821,14 @@ input[type="password"]{
 }
 
 .delivery-input:focus ~ .delivery-label{
-	top:-20px;
+	top: -22px;
 	font-size: 14px;
 	color: #8fbdec;
 }
 
-.delivery-input:valid{
-	font-weight: bold;
-	color: #323232;
-	border: 1px solid  #d3d3d2;
-}
-
 .delivery-input:valid ~ .delivery-label{
-	top:-20px;
+	top:-22px;
 	font-size: 14px;
-	color: #999;
 }
 
 .delivery-form .btn{
