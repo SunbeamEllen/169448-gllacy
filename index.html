@@ -44,7 +44,7 @@
 							<div class="office-search-form">
 								<form class="search-form" action="" method="get">
 									<input class="search-input" type="search" name="search" id="search-input" required>
-									<label class="search-label" for="search-input">Что ищем?</label>
+									<label class="search-label label" for="search-input">Что ищем?</label>
 								</form>
 							</div>	
 						</div>				
@@ -54,9 +54,9 @@
 							<div class="office-login-form">
 								<form class="login-form" action="" method="post">
 									<input class="email-input" type="mail" name="email" id="email-input" required>
-									<label class="email-label" for="email-input">Электронная почта</label>
+									<label class="email-label label" for="email-input">Электронная почта</label>
 									<input class="password-input" type="password" name="password" id="password-input" required="">
-									<label class="password-label" for="">Пароль</label>
+									<label class="password-label label" for="">Пароль</label>
 									<button class="btn" type="submit">Войти</button>							
 								</form>
 								<a href="#" class="forgot-password">Забыли пароль?</a>
@@ -93,9 +93,9 @@
 						</div>				
 
 						<div class="slider-controls">
-            				<label for="btn-1"></label>
-           					<label for="btn-2"></label>
-            				<label for="btn-3"></label>
+            				<label class="controls" for="btn-1"></label>
+           					<label class="controls" for="btn-2"></label>
+            				<label class="controls" for="btn-3"></label>
           				</div>
 					</div>					
 
@@ -181,7 +181,7 @@
 								</p>
 								<form action="" class="delivery-form clearfix" method="post">
 									<input class="delivery-input" type="mail" name="email" id="delivery-mail" required>
-									<label for="delivery-mail" class="delivery-label">Электронная почта</label>
+									<label for="delivery-mail label" class="delivery-label">Электронная почта</label>
 									<button class="btn" type="submit">Отправить</button>
 								</form>
 							</div>							
@@ -200,17 +200,22 @@
 						<p>(с 10 до 20 ежедневно)</p>
 
 						<a href="#" class="btn">Форма обратной связи</a>
-						<div class="popup-feedback-form">
-							<span>Мы обязательно вам ответим!</span>
-			 				<form action="" method="post">
-			 					<input type="text" name="your name" placeholder="Как вас зовут?">
-			 					<input type="mail" name="email" placeholder="Ваша почта для ответа">
-			 					<textarea name="comment" id="comment-field" cols="50" rows="5" placeholder="Напишите что-нибудь..."></textarea>
-			 					<button class="btn" type="submit">Отправить</button>
-			 				</form>
-			 			</div>
 					</div>		
 				</div>
+
+				<div class="modal-content">
+					<span>Мы обязательно вам ответим!</span>
+			 			<form class="popup-form" action="" method="post">
+			 				<input class="name-input" type="text" name="your-name" id="name-input" required>
+			 				<label class="name-label label" for="name-input">Как вас зовут?</label>
+			 				<input class="popup-input" type="mail" name="email" id="popup-email" required>
+			 				<label class="popup-label label" for="popup-email">Ваша почта для ответа</label>						
+			 				<textarea class="content-textarea" name="comment" id="comment-field" cols="43" rows="5"></textarea>
+			 				<label class="textarea-label label" for="comment-field">Напишите что-нибудь...</label>
+			 				<button class="btn modal-btn" type="submit" title="Отправить">Отправить</button>
+			 				<button class="content-close" type="button" title="Закрыть">Закрыть</button>
+			 			</form>
+			 	</div>
 			</main>
 
 			<footer class="main-footer">
@@ -238,6 +243,7 @@
 				</div>
 			</footer>
 		</div>
+		<div class="modal-overlay"></div>
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<script src="js/map.js" type="text/javascript"></script>
 	</body>
