@@ -41,7 +41,7 @@
 						<div class="office-search-form">
 							<form class="search-form" action="" method="get">
 								<input class="search-input" type="search" name="search" id="search-input" required>
-								<label class="search-label" for="search-input">Что ищем?</label>
+								<label class="search-label label" for="search-input">Что ищем?</label>
 							</form>
 						</div>	
 					</div>	
@@ -51,9 +51,9 @@
 						<div class="office-login-form">
 							<form class="login-form" action="" method="post">
 								<input class="email-input" type="mail" name="email" id="email-input" required>
-								<label class="email-label" for="email-input">Электронная почта</label>
+								<label class="email-label label" for="email-input">Электронная почта</label>
 								<input class="password-input" type="password" name="password" id="password-input" required="">
-								<label class="password-label" for="">Пароль</label>
+								<label class="password-label label" for="">Пароль</label>
 								<button class="btn" type="submit">Войти</button>							
 							</form>
 							<a href="#" class="forgot-password">Забыли пароль?</a>
@@ -97,9 +97,9 @@
 		<main>
 			<div class="container">
 				<div class="breadcrumbs">
-					<a href="index.html">Главная</a>
-					<a href="catalog.html">Каталог</a>
-					<a href="#">Сливочное</a>
+					<a class="breadcrumbs-item" href="index.html">Главная</a>
+					<a class="breadcrumbs-item" href="catalog.html">Каталог</a>
+					<a class="breadcrumbs-item" href="#">Сливочное</a>
 				</div>
 			
 
@@ -108,17 +108,22 @@
 					<form class="ice-cream-selection clearfix" action="" method="post">
 						<fieldset class="sorting-part sorting">
 							<legend>Сортировка:</legend>
-							<select name="sorting">
-								<option value="criterion">по популярности</option>
-								<option value="criterion">сначала недорогие</option>
-								<option value="criterion">сначала дорогие</option>
-								<option value="criterion">по жирности</option>
-							</select>									
+								<select name="sorting" class="sorting-select">
+									<option value="criterion">по популярности</option>
+									<option value="criterion">сначала недорогие</option>
+									<option value="criterion">сначала дорогие</option>
+									<option value="criterion">по жирности</option>
+								</select>																
 						</fieldset>
 
 						<fieldset class="sorting-part range">
-							<legend>Цена: 100 руб. - 500 руб.</legend>
-							<input type="range" name="price">
+							<legend>Цена: 100 руб. - 500 руб.</legend>								
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="toggle toggle-min"></div>
+								<div class="toggle toggle-max"></div>							
+							<!--<input class="range-input" type="range" name="price" min="100" max="500" step="50" multiple>!-->
 						</fieldset>
 
 						<fieldset class="sorting-part fatness">

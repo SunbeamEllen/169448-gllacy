@@ -81,9 +81,9 @@ body>input[type="radio"]{display: none;}
 .main-navigation-item{
 	color: #fff;
 	line-height: 18px;
-	text-decoration: none;
 	display: block;
 	padding: 7px 13px 7px 14px;
+	text-decoration: underline;
 }
 
 .main-navigation-item::after{
@@ -98,6 +98,7 @@ body>input[type="radio"]{display: none;}
 	background-color: #f7f6f3;
 	color: #323232;
 	border-radius: 16px;
+	text-decoration: none;
 }
 
 .main-navigation-item:active{
@@ -113,6 +114,7 @@ body>input[type="radio"]{display: none;}
 	color: #fff;
 	background-color: #d07058;
 	border-radius: 16px;
+	text-decoration: none;
 }
 
 .navigation-list:hover .drop{
@@ -369,15 +371,6 @@ input{
 	top: 54px;
 }
 
-/*.email-input:focus ~ .password-label{
-	top: 95px;
-	color: #999;
-}*/
-
-/*.email-input:valid ~ .password-label{
-	top: 95px;
-}*/
-
 .btn{
 	display: inline-block;
 	vertical-align: top;
@@ -452,6 +445,10 @@ input{
 	line-height: 24px;
 }
 
+.popup-checkout{display: none;}
+
+
+/*MODAL WINDOW*/
 .modal-content{
 	/*display: none;*/
 	position: absolute;
@@ -591,6 +588,7 @@ input{
 }
 
 .modal-overlay{
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -599,6 +597,7 @@ input{
 	height: 100%;
 	background: rgba(0, 0, 0, 0.5);
 }
+/*MODAL WINDOW END*/
 
 .info{
 	margin-bottom: 10px;
@@ -659,7 +658,7 @@ input{
   cursor: pointer;
 }
 
-label:hover{
+.controls:hover{
 	background-color: rgba(255,255,255, 0.6); 
 }
 
@@ -684,17 +683,11 @@ label:hover{
   background-image: url(../img/Icecream_gallery_3.png);
 }
 
-#btn-1:checked ~ .wrapper label[for="btn-1"],
-#btn-2:checked ~ .wrapper label[for="btn-2"],
-#btn-3:checked ~ .wrapper label[for="btn-3"] {
+#btn-1:checked ~ .wrapper .controls[for="btn-1"],
+#btn-2:checked ~ .wrapper .controls[for="btn-2"],
+#btn-3:checked ~ .wrapper .controls[for="btn-3"] {
   background-color: #ffffff;
 }
-
-/*#btn-1:hover ~ .wrapper label[for="btn-1"],
-#btn-2:hover ~ .wrapper label[for="btn-2"],
-#btn-3:hover ~ .wrapper label[for="btn-3"] {
-  background-color: rgba(255,255,255, 0.6);
-}*/
 
 .special-offer-item{
 	width: 541px;
@@ -1035,20 +1028,48 @@ label:hover{
 
 .breadcrumbs{
 	display: inline-block;
+	vertical-align: top;
+	margin: 0px;
+	margin-top: 20px;
+	margin-bottom: 4px;
+	font-size: 0;
 }
 
-.breadcrumbs a{
+.breadcrumbs-item{
+	position: relative;
 	float: left;
+	font-size: 14px;
+	line-height: 16px;
+	color: rgba(255,255,255, 0.9);
+	text-decoration: underline;
+	font-weight: 400;
+	padding-right: 21px;
 }
+
+.breadcrumbs-item::after{
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: 66px;
+	width: 7px;
+	height: 6px;
+	background: transparent url(../img/Arrow.png) no-repeat;
+	margin-left: -7px;
+}
+
+.breadcrumbs-item:last-child, .breadcrumbs-item:hover{text-decoration: none;}
+
+.breadcrumbs-item:last-child::after{display: none;}
 
 .choice-zone{
 	width: 1146px;
 }
 .catalog-headline {
-	font: 35px/41px 'Roboto Bold';
+	font-size: 35px;
+	line-height: 41px;
 	color: #fff;
 	margin: 0px;
-	margin-bottom: 30px;
+	margin-bottom: 26px;
 }
 
 .ice-cream-selection{
@@ -1058,16 +1079,101 @@ label:hover{
 
 .sorting-part{
 	float: left;
+	position: relative;
 	margin: 0px;
 	border: none;
-	padding: 0px;
+	padding: 5px 0px 6px 0px;
 	margin-bottom: 16px;
-	margin-right: 14px;
+	margin-right: 15px;
+	background: rgba(255,255,255,0.2);
+	border-radius: 30px;
 }
 
-.sorting{width: 193px;}
+legend{
+	font-size: 14px;
+	line-height: 16px;
+	padding: 0px;
+	padding-bottom: 31px;
+	padding-left: 17px;
+	font-weight: 400;
+}
 
-.range{width: 218px;}
+option{outline: none;}
+
+.sorting{width: 192px;}
+
+.sorting-select{
+	position: absolute;
+	width: 192px;
+	top: 24px;
+	right: 8px;
+	left: 0px;
+	border: none;
+	background: transparent url(../img/Marker.png) 93% 48% no-repeat;
+	color: #fff;
+	font-weight: bold;
+	outline: none;
+	border-radius: 30px;
+	padding: 7px 17px;
+	font-size: 16px;
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	text-indent: 0.01px; 
+  	text-overflow: '';
+  	-ms-appearance: none;
+  	appearance: none!important;	
+}
+
+.sorting-select:hover{
+	background: #fff url(../img/Marker_hover.png) 93% 48% no-repeat;
+	color: #323232;
+	
+}
+
+.range{width: 222px;}
+
+.range-filter{
+	width: 100%;
+}
+
+.scale, .bar{
+	position: absolute;
+	top: 39px;
+	left: 18px;
+	width: 188px;
+	height: 3px;
+	background: rgba(255,255,255, 0.5);
+}
+
+.bar{
+	width: 108px;
+	top: 0px;
+	left: 22px;
+	background: rgba(255,255,255,1);
+}
+
+.toggle{
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 21px;
+	height: 21px;
+	background: #f8f7f4;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.toggle-min{left: 37px;}
+
+.toggle-max{left: 134px;}
+
+/*.range-input{
+	padding: 0px;
+	position: absolute;
+	width: 188px;
+	top: 30px;
+	left: 19px;
+}*/
 
 .fatness{width: 415px; margin-right: 5px;}
 
