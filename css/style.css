@@ -106,6 +106,7 @@ body>input[type="radio"]{display: none;}
 	color: #323232;
 	border-radius: 16px;
 	box-shadow: inset 0px 2px 2px  0px #696969;
+	text-decoration: none;
 }
 
 .navigation-list{min-height: 50px;}
@@ -1074,7 +1075,7 @@ input{
 
 .ice-cream-selection{
 	padding-right: 20px;
-	margin-bottom: 34px;
+	margin-bottom: 25px;
 }
 
 .sorting-part{
@@ -1167,19 +1168,118 @@ option{outline: none;}
 
 .toggle-max{left: 134px;}
 
-/*.range-input{
-	padding: 0px;
-	position: absolute;
-	width: 188px;
-	top: 30px;
-	left: 19px;
-}*/
+.fatness{
+	width: 415px; 
+	margin-right: 5px;
+	font-size: 0;
+}
 
-.fatness{width: 415px; margin-right: 5px;}
+.radio-input, .checkbox-input{
+	display: none;
+}
+
+.radio-label, .checkbox-label{
+	display: inline-block;
+	cursor: pointer;
+	top: 31px;
+	left: 15px;
+	padding-left: 30px;
+	position: absolute;
+	font-size: 16px;
+	margin-right: 15px;
+}
+
+.radio-label::before, .checkbox-label::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+	height: 20px;
+    margin-right: 0px;
+	position: absolute;
+    left: 0;
+	background: url(../img/Radio-sprite.png) no-repeat;
+}
+
+.radio-label:hover::before{
+	background-position: 0px -20px;
+}
+
+.radio-input:checked + .radio-label::before{
+	background-position: -20px 0px;
+}
+
+.radio-input:checked + .radio-label:hover::before{
+	background-position: -20px -20px;
+}
+
+.radio-input:disabled + .radio-label::before{
+	opacity: 0.4;
+}
+
+.ten{left: 86px;}
+
+.before30{left: 188px;}
+
+.above30{
+	left: 289px;
+	margin-right: 0px;
+}
 
 .fillers{width: 702px;}
 
-.apply{width: 144px; float: left;}
+.checkbox-label::before{
+	background: url(../img/Checkbox-sprite.png) no-repeat;
+}
+
+.checkbox-input:checked + .checkbox-label::before{
+	background-position: -20px -0px;
+}
+
+.checkbox-label:hover::before{
+	background-position: 0px -20px;
+}
+
+.checkbox-input:checked + .checkbox-label:hover::before{
+	background-position: -20px -20px;
+}
+
+.checkbox-input:disabled + .checkbox-label::before{
+	opacity: 0.4;
+}
+
+.chocolate{left: 18px;}
+
+.sugar{left: 24%;}
+
+.fruits{left: 53%;}
+
+.syrup{left: 69.4%;}
+
+.jam{left: 85.1%; margin-right: 0px;}
+
+.apply{
+	width: 142px;
+	float: left;
+	background-color: transparent;
+    border: 2px solid #f5f7f6;
+    color: #fff;
+    margin-top: 24px;
+    padding: 5px 0px;
+    border-radius: 30px;
+    outline: none;
+}
+
+.apply:hover{
+	background-color: #fbfcfb;
+	color: #323232;
+}
+
+.apply:active{
+	background-color: #eaeaea;
+	box-shadow: inset 0px 2px 2px 0px #696969;
+	border: none;
+	
+}
 
 .paginator{
 	float: right;

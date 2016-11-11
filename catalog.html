@@ -122,24 +122,41 @@
 									<div class="bar"></div>
 								</div>
 								<div class="toggle toggle-min"></div>
-								<div class="toggle toggle-max"></div>							
-							<!--<input class="range-input" type="range" name="price" min="100" max="500" step="50" multiple>!-->
+								<div class="toggle toggle-max"></div>		
 						</fieldset>
 
 						<fieldset class="sorting-part fatness">
 							<legend>Жирность:</legend>
-							<label><input type="radio" name="fatness">0%</label>				
-							<label><input type="radio" name="fatness" checked="">до 10%</label>
-							<label><input type="radio" name="fatness">до 30%</label>
-							<label><input type="radio" name="fatness">выше 30%</label>		
+							<input class="radio-input" type="radio" name="fatness" value="0%" id="zero-input">	
+							<label for="zero-input" class="radio-label zero">0%</label>
+							
+							<input class="radio-input" type="radio" name="fatness" value="до 10%" id="ten-input" checked>
+							<label for="ten-input" class="radio-label ten">до 10%</label>
+							
+							<input for="before30" class="radio-input" type="radio" name="fatness" value="до 30%" id="before30-input">
+							<label for="before30-input" class="radio-label before30">до 30%</label>
+							
+							<input class="radio-input" type="radio" name="fatness" value="выше 30%" id="above30-input">	
+							<label for="above30-input" class="radio-label above30">выше 30%</label>								
 						</fieldset>
 
 						<fieldset class="sorting-part fillers">
-							<label><input type="checkbox" checked="">шоколадные</label>
-							<label><input type="checkbox" checked="">сахарные присыпки</label>
-							<label><input type="checkbox">фрукты</label>
-							<label><input type="checkbox">сиропы</label>
-							<label><input type="checkbox">джемы</label>
+							<legend>Наполнители:</legend>
+
+							<input type="checkbox" class="checkbox-input" id="chocolate" checked>
+							<label for="chocolate" class="checkbox-label chocolate">шоколадные</label>
+
+							<input type="checkbox" class="checkbox-input" id="sugar" checked>
+							<label for="sugar" class="checkbox-label sugar">сахарные присыпки</label>
+
+							<input type="checkbox" class="checkbox-input" id="fruits">
+							<label for="fruits" class="checkbox-label fruits">фрукты</label>
+							
+							<input type="checkbox" class="checkbox-input" id="syrup">
+							<label for="syrup" class="checkbox-label syrup">сиропы</label>
+
+							<input type="checkbox" class="checkbox-input" id="jam">
+							<label for="jam" class="checkbox-label jam">джемы</label>
 						</fieldset>
 
 						<button class="apply" type="submit">Применить</button>				
@@ -277,17 +294,17 @@
 		<footer class="main-footer">
 			<div class="container clearfix">
 				<div class="footer-social">
-					<a class="social-btn social-btn-tw" href="https://twitter.com/gllacy_shop">Твиттер</a>
-					<a class="social-btn social-btn-inst" href="https://www.instagram.com/gllacy_shop">Инстаграм</a>
-					<a class="social-btn social-btn-fb" href="https://www.facebook.com/gllacy_shop">Фейсбук</a>  
-  					<a class="social-btn social-btn-vk" href="https://vk.com/gllacy_shop">Вконтакте</a>    		
+					<a class="social-btn social-btn-tw" href="#">Твиттер</a>
+					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>  
+  					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>    		
   				</div>
 
   				<div class="footer-info">
-  					<a class="providers" href="https://gllacy.ru/for_suppliers">Для поставщиков</a>
-  					<a href="https://gllacy.ru/our_documents">Наши документы</a>
-  					<a href="https://gllacy.ru/production">О производстве</a>  						
-  					<a href="https://gllacy.ru/environmential_standarts">Экологические стандарты</a>
+  					<a class="providers" href="#">Для поставщиков</a>
+  					<a href="#">Наши документы</a>
+  					<a href="#">О производстве</a>  						
+  					<a href="#">Экологические стандарты</a>
   				</div> 
 
   				<div class="copyright">
