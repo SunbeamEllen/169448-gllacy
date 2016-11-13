@@ -311,10 +311,11 @@ input{
 .login-block:hover .office-login-form{display: block;}
 
 .login{
-	padding: 7px 17px 8px 43px;
+	padding: 7px 14px 8px 43px;
 	background: rgba(255,255,255,0.35) url(../img/Entrance.png) no-repeat 21% 53%;
 	border-radius: 16px;
 	margin-right: 9px;
+	font-weight: bold;
 }
 
 .login:hover{
@@ -422,10 +423,116 @@ input{
 }
 
 .bucket{
-	padding: 7px 34px 8px 45px; 
+	padding: 7px 32px 8px 43px; 
 	background: rgba(255,255,255,0.35) url(../img/Bucket.png) no-repeat 18% 58%;
 	border-radius: 16px;
+	font-weight: bold;
 }
+
+.full-bucket{
+	padding: 7px 12px 8px 43px; 
+	background: #f7f6f3 url(../img/Bucket_full.png) no-repeat 18% 58%;
+	border-radius: 16px;
+	color: #323232;
+	font-weight: bold;
+}
+
+.popup-checkout{
+	/*display: none;*/
+	position: absolute;
+	top: 37px;
+	right: 0px;
+	width: 510px;
+	padding: 20px 15px;
+	z-index: 6;
+	background-color: #f8f7f4;
+	border-radius: 4px;
+	box-shadow: -1px 11px 20px 0px rgba(0,0,0,0.65);
+}
+
+.goods{
+	border-collapse: collapse;
+	border-bottom: 1px solid #cacac7;
+	margin-bottom: 17px;
+}
+
+td{
+	font-size: 13px;
+	line-height: 16px;
+	color: #323232;
+	padding: 0px;
+}
+
+.close-btn{padding: 0px;}
+
+.cancel{
+	position: absolute;
+	outline: none;
+	top: 27px;
+    left: 17px;
+    width: 10px;
+    height: 11px;
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.cancel2{
+	top: 81px;
+	left: 17px;
+}
+
+.cancel::before, .cancel::after{
+	content: "";
+    position: absolute;
+    top: 7px;
+    left: -1px;
+    width: 13px;
+    height: 1px;
+    background-color: #676766;
+    border-radius: 1px;
+}
+
+.cancel::before {transform: rotate(45deg);}
+
+.cancel::after{transform: rotate(-45deg);}
+
+.item-icon img{
+	display: block;
+	padding: 0px 12px 15px 26px;
+}
+
+.item-name{
+	padding: 0px 0px 0px 0px;
+}
+
+.item-price{
+	color: #999;
+}
+
+.checkout{
+	float: right;
+	font-size: 0;
+}
+
+.checkout-price{
+	font-size: 15px;
+	line-height: 18px;
+	color: #333;
+	display: inline-block;
+	position: absolute;
+	bottom: 77px;
+	right: 13px;
+}
+
+.checkout-btn{
+	box-shadow: 0px 2px 2px 0px #ac1000;
+    margin-top: 25px;
+    padding: 9px 11px 9px 11px;
+}
+
+
 
 .main-header-contact{
 	position: absolute;
@@ -438,16 +545,13 @@ input{
 	line-height: 16px;
 	margin: 0;
 	margin-bottom: 5px;
-	margin-left: 13px;
 }
 
 .contact-info{
 	font-size: 22px;
 	line-height: 24px;
+	margin-right: 5px;
 }
-
-.popup-checkout{display: none;}
-
 
 /*MODAL WINDOW*/
 .modal-content{
@@ -558,6 +662,7 @@ input{
 
 .content-close{
 	position: absolute;
+	outline: none;
 	top: -50px;
 	right: 0px;
 	width: 18px;
@@ -1263,7 +1368,7 @@ option{outline: none;}
 	background-color: transparent;
     border: 2px solid #f5f7f6;
     color: #fff;
-    margin-top: 24px;
+    margin-top: 22px;
     padding: 5px 0px;
     border-radius: 30px;
     outline: none;
