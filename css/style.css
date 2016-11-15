@@ -265,18 +265,14 @@ input{
 	color: #323232;
 }
 
-.search-input{	
-	width: 311px;	
-}
+.search-input{width: 311px;}
 
 .search-input:hover{
-	border: 2px solid #c7c6c5;
-	margin-top: -2px;	
+	box-shadow: inset 0px 0px 2px 1px #c7c6c5;		
 }
 
 .search-input:focus{
-	border: 2px solid #5b9ddf;
-	margin-top: -2px;
+	box-shadow: inset 0px 0px 2px 1px #5b9ddf;
 }
 
 .search-input:focus ~ .search-label{
@@ -343,13 +339,11 @@ input{
 }
 
 .email-input:hover, .password-input:hover{
-	border: 2px solid #c7c6c5;
-	margin-top: -2px;
+	box-shadow: inset 0px 0px 2px 1px #c7c6c5;	
 }
 
 .email-input:focus, .password-input:focus{
-	border: 2px solid #5b9ddf;
-	margin-top: -2px;
+	box-shadow: inset 0px 0px 2px 1px #5b9ddf;
 }
 
 .email-input:focus ~ .email-label{
@@ -366,6 +360,7 @@ input{
 .password-label{top: 91px;}
 
 .password-input:focus ~ .password-label{
+	color: #5b9ddf;
 	top: 54px;
 }
 
@@ -422,6 +417,12 @@ input{
 	color: #e84d37;
 }
 
+.bucket-block{
+	display: inline-block;
+    vertical-align: top;
+    padding-bottom: 10px;
+}
+
 .bucket{
 	padding: 7px 32px 8px 43px; 
 	background: rgba(255,255,255,0.35) url(../img/Bucket.png) no-repeat 18% 58%;
@@ -437,8 +438,12 @@ input{
 	font-weight: bold;
 }
 
-.popup-checkout{
-	/*display: none;*/
+.bucket-block:hover .bucket-checkout{
+	display: block;
+}
+
+.bucket-checkout{
+	display: none;
 	position: absolute;
 	top: 37px;
 	right: 0px;
@@ -453,7 +458,7 @@ input{
 .goods{
 	border-collapse: collapse;
 	border-bottom: 1px solid #cacac7;
-	margin-bottom: 17px;
+	margin-bottom: 23px;
 }
 
 td{
@@ -461,6 +466,7 @@ td{
 	line-height: 16px;
 	color: #323232;
 	padding: 0px;
+	vertical-align: top;
 }
 
 .close-btn{padding: 0px;}
@@ -500,20 +506,31 @@ td{
 
 .item-icon img{
 	display: block;
-	padding: 0px 12px 15px 26px;
+	padding: 0px 12px 20px 26px;
 }
 
 .item-name{
-	padding: 0px 0px 0px 0px;
+	padding: 8px 8px 16px 0px; 
+	width: 232px;
+}
+
+.item-weight{
+	padding: 8px 0px 0px 7px;
 }
 
 .item-price{
+	padding: 8px 14px 0px 0px;
 	color: #999;
+}
+
+.total{
+	padding: 8px 16px 0px 13px;
 }
 
 .checkout{
 	float: right;
 	font-size: 0;
+    margin-bottom: 2px;
 }
 
 .checkout-price{
@@ -528,11 +545,9 @@ td{
 
 .checkout-btn{
 	box-shadow: 0px 2px 2px 0px #ac1000;
-    margin-top: 25px;
+    margin-top: 23px;
     padding: 9px 11px 9px 11px;
 }
-
-
 
 .main-header-contact{
 	position: absolute;
@@ -553,162 +568,7 @@ td{
 	margin-right: 5px;
 }
 
-/*MODAL WINDOW*/
-.modal-content{
-	/*display: none;*/
-	position: absolute;
-	z-index: 11;
-	top: 68%;
-	left: 50%;
-	width: 428px;
-	padding: 20px 25px;
-	margin-left: -239px;
-	background-color: #f8f7f4;
-	color: #323232; 
-	box-shadow: 0 30px 50px rgba(0,0,0,0.7);
-	border-radius: 12px;
-	/*font-size: 0;*/
-}
-
-.modal-content span{
-	display: inline-block;
-	vertical-align: top;
-	font-size: 24px;
-	line-height: 28px;
-	padding-bottom: 22px;
-}
-
-.name-input, .popup-input{
-	width: 266px;
-	margin-bottom: 20px;
-}
-
-.name-label, .popup-label{
-	font-size: 16px;
-}
-
-.name-input:hover, .popup-input:hover, .content-textarea:hover{
-	border: 2px solid #c7c6c5;
-	margin-top: -2px;
-}
-
-.name-input:focus, .popup-input:focus{
-	border: 2px solid #5b9ddf;
-	margin-top: -2px;
-}
-
-.name-input:focus ~ .name-label{
-	top: -22px;
-	font-size: 14px;
-	color: #5b9ddf;
-}
-
-.name-input:valid ~ .name-label{
-	top: -22px;
-	font-size: 14px;
-}
-
-.popup-label{top: 94px;}
-
-.popup-input:focus ~ .popup-label{
-	top: 54px;
-	font-size: 14px;
-	color: #5b9ddf;
-}
-
-.popup-input:valid ~ .popup-label{
-	top: 54px;
-	font-size: 14px;
-}
-
-.content-textarea{
-	box-sizing: border-box;
-	padding: 13px;
-	border-radius: 5px;
-	font-size: 16px;
-	line-height: 24px;
-	color: #323232;
-	font-weight: bold;
-	margin-bottom: 25px;
-}
-
-.content-textarea:focus{
-	border: 2px solid #5b9ddf;
-	border-radius: 5px;
-	margin-top: -2px;
-}
-
-.textarea-label{
-	top: 161px;
-	font-size: 16px;
-}
-
-.content-textarea:focus ~ .textarea-label{
-	top: 130px;
-	font-size: 14px;
-	color: #5b9ddf;
-}
-
-.content-textarea:valid ~ .textarea-label{
-	top: 130px;
-	font-size: 14px;
-}
-
-.modal-btn{
-	float: right;
-	padding: 14px 23px;
-	margin-bottom: 5px;
-}
-
-.content-close{
-	position: absolute;
-	outline: none;
-	top: -50px;
-	right: 0px;
-	width: 18px;
-	height: 17px;
-	font-size: 0;
-	background-color: transparent;
-	border: 0;
-	cursor: pointer;
-}
-
-.content-close::before,
-.content-close::after {
-	content: "";
-	position: absolute;
-	top: 7px;
-	left: -1px;
-	width: 21px;
-	height: 2px;
-	background-color: #000;
-	border-radius: 1px;
-}
-
-.content-close::before {
-	transform: rotate(45deg);
-}
-
-.content-close::after {
-	transform: rotate(-45deg);
-}
-
-.modal-overlay{
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 10;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-}
-/*MODAL WINDOW END*/
-
-.info{
-	margin-bottom: 10px;
-}
-
+.info{margin-bottom: 10px;}
 /*=========HEADER END=========*/
 
 /*=========Index Gllacy=========*/
@@ -838,10 +698,6 @@ td{
 	padding: 11px 20px 11px 16px;
 }
 
-.strawberry-item .btn:hover, .chocolate-item .btn:hover{
-
-}
-
 .main-shop-info, .shop-news {margin-bottom: 39px;}
 
 .bestseller{margin-bottom: 38px;}
@@ -894,7 +750,7 @@ td{
 	display: inline-block;
 	text-align: center;
 	font-weight: 400;
-	padding: 7px 7px 0px 0px;
+	padding: 7px 9px 0px 9px;
 	font-size: 16px;
 	line-height: 22px;
 	color: #fff;
@@ -907,7 +763,7 @@ td{
 
 .item-position{
 	position: relative;
-	z-index: 6;
+	z-index: 4;
 }
 
 .icecream-position::before{
@@ -922,7 +778,7 @@ td{
 
 .icecream-price{
 	position: absolute;
-    bottom: 71px;
+    bottom: 18px;
     font-size: 45px;
     line-height: 45px;
     left: 1px;
@@ -1058,13 +914,11 @@ td{
 }
 
 .delivery-input:hover{
-	border: 2px solid #c7c6c5;
-	margin-top: -2px;
+	box-shadow: inset 0px 0px 2px 1px #c7c6c5;
 }
 
 .delivery-input:focus{
-	border: 2px solid #5b9ddf;
-	margin-top: -2px;
+	box-shadow: inset 0px 0px 2px 1px #5b9ddf;
 }
 
 .delivery-input:focus ~ .delivery-label{
@@ -1121,10 +975,203 @@ td{
 	padding-bottom: 2px;
 }
 
-.main-contacts .btn{
+.feedback{
 	margin-top: 22px;
 	padding: 10px 17px 10px 28px;
 }
+
+/*MODAL WINDOW*/
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-content{
+	display: none;
+	position: absolute;
+	z-index: 11;
+	top: 66%;
+	left: 50.2%;
+	width: 428px;
+	padding: 15px 24px;
+	padding-bottom: 28px;
+	margin-left: -239px;
+	background-color: #f8f7f4;
+	color: #323232; 
+	box-shadow: 0 30px 50px rgba(0,0,0,0.7);
+	border-radius: 12px;
+}
+
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.content-close{
+	position: absolute;
+	outline: none;
+	top: 14px;
+	right: 15px;
+	width: 18px;
+	height: 17px;
+	font-size: 0;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+}
+
+.content-close::before,
+.content-close::after {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: -1px;
+	width: 21px;
+	height: 2px;
+	background-color: #000;
+	border-radius: 1px;
+}
+
+.content-close::before {
+	transform: rotate(45deg);
+}
+
+.content-close::after {
+	transform: rotate(-45deg);
+}
+
+.modal-content span{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 24px;
+	line-height: 28px;
+	padding-bottom: 19px;
+}
+
+.name-input, .popup-input{
+	width: 266px;
+	margin-bottom: 20px;
+	padding: 9px 0px;
+}
+
+.name-label{
+	font-size: 16px;
+	left: 15px;
+	top: 12px;
+}
+
+.name-input:hover, .popup-input:hover, .content-textarea:hover{
+	box-shadow: inset 0px 0px 2px 1px #c7c6c5;	
+}
+
+.name-input:focus, .popup-input:focus{
+	box-shadow: inset 0px 0px 2px 1px #5b9ddf;
+}
+
+.name-input:focus ~ .name-label{
+	top: -22px;
+	font-size: 14px;
+	color: #5b9ddf;
+}
+
+.name-input:valid ~ .name-label{
+	top: -22px;
+	font-size: 14px;
+}
+
+.popup-label{
+	font-size: 16px;
+	top: 76px;
+}
+
+.popup-input:focus ~ .popup-label{
+	top: 54px;
+	font-size: 14px;
+	color: #5b9ddf;
+}
+
+.popup-input:valid ~ .popup-label{
+	top: 54px;
+	font-size: 14px;
+}
+
+.content-textarea{
+	box-sizing: border-box;
+	padding: 16px;
+	padding-left: 6px;
+	border: 1px solid #c7c6c5;
+	border-radius: 5px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #323232;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.content-textarea:focus{
+	box-shadow: inset 0px 0px 2px 0px #5b9ddf;
+	border-radius: 5px;
+}
+
+.textarea-label{
+	top: 138px;
+	font-size: 16px;
+}
+
+.content-textarea:focus ~ .textarea-label{
+	top: 130px;
+	font-size: 14px;
+	color: #5b9ddf;
+}
+
+.content-textarea:valid ~ .textarea-label{
+	top: 130px;
+	font-size: 14px;
+}
+
+.modal-btn{
+	float: right;
+	padding: 10px 21px;
+}
+
+.modal-overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+/*MODAL WINDOW END*/
 /*=========Index Gllacy End=========*/
 
 /*=========Catalog Gllacy=========*/
@@ -1211,7 +1258,7 @@ option{outline: none;}
 .sorting-select{
 	position: absolute;
 	width: 192px;
-	top: 24px;
+	top: 22px;
 	right: 8px;
 	left: 0px;
 	border: none;
@@ -1383,7 +1430,7 @@ option{outline: none;}
 	background-color: #eaeaea;
 	box-shadow: inset 0px 2px 2px 0px #696969;
 	border: none;
-	
+	padding: 7px 0px;	
 }
 
 .paginator{

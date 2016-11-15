@@ -119,9 +119,9 @@
 						<div class="bestseller-item">
 							<div class="item-position icecream-position">
 								<img src="img/Orange_icecream.png" alt="icecream">
-								<span class="icecream-price">310 <img src="img/Rub.png" alt=""><span class="kg">/кг</span></span>
-								<a class="icecream-item" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-							</div>							
+								<span class="icecream-price">310 <img src="img/Rub.png" alt=""><span class="kg">/кг</span></span>	
+							</div>	
+							<a class="icecream-item" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>				
 							<a href="#" class="btn">Быстрый просмотр</a>
 						</div>
 
@@ -129,8 +129,8 @@
 							<div class="item-position icecream-position">
 								<img src="img/Chocolate_icecream.png" alt="icecream">
 								<span class="icecream-price">380 <img src="img/Rub.png" alt=""><span class="kg">/кг</span></span>
-								<a class="icecream-item" href="#">Сливочно-кофейное с кусочками шоколада</a>
-							</div>							
+							</div>	
+							<a class="icecream-item" href="#">Сливочно-кофейное с кусочками шоколада</a>						
 							<a href="#" class="btn">Быстрый просмотр</a>
 						</div>
 			
@@ -138,17 +138,17 @@
 							<div class="item-position icecream-position">
 								<img src="img/Strawberry_icecream.png" alt="icecream">
 								<span class="icecream-price">355 <img src="img/Rub.png" alt=""><span class="kg">/кг</span></span>
-								<a class="icecream-item" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-							</div>	
+							</div>
+							<a class="icecream-item" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>	
 							<a href="#" class="btn">Быстрый просмотр</a>										
 						</div>
 
 						<div class="bestseller-item">
 							<div class="item-position icecream-position">
 								<img src="img/Cream_brulee.png" alt="icecream">
-								<span class="icecream-price">415 <img src="img/Rub.png" alt=""><span class="kg">/кг</span></span>
-								<a class="icecream-item" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-							</div>							
+								<span class="icecream-price">415 <img src="img/Rub.png" alt=""><span class="kg">/кг</span></span>	
+							</div>
+							<a class="icecream-item" href="#">Сливочное крем-брюле с карамельной подливкой</a>						
 							<a href="#" class="btn">Быстрый просмотр</a>
 						</div>									
 					</div>
@@ -199,22 +199,22 @@
 						<span class="phone">8 812 450-25-25</span>						
 						<p>(с 10 до 20 ежедневно)</p>
 
-						<a href="#" class="btn">Форма обратной связи</a>
+						<a href="#" class="btn feedback">Форма обратной связи</a>
 					</div>		
 				</div>
 
 				<div class="modal-content">
 					<span>Мы обязательно вам ответим!</span>
 			 			<form class="popup-form" action="" method="post">
-			 				<input class="name-input" type="text" name="your-name" id="name-input" required>
+			 				<input class="name-input" type="text" name="name" id="name-input" required>
 			 				<label class="name-label label" for="name-input">Как вас зовут?</label>
 			 				<input class="popup-input" type="mail" name="email" id="popup-email" required>
 			 				<label class="popup-label label" for="popup-email">Ваша почта для ответа</label>						
 			 				<textarea class="content-textarea" name="comment" id="comment-field" cols="43" rows="5" required></textarea>
 			 				<label class="textarea-label label" for="comment-field">Напишите что-нибудь...</label>
 			 				<button class="btn modal-btn" type="submit" title="Отправить">Отправить</button>
-			 				<button class="content-close" type="button" title="Закрыть">Закрыть</button>
 			 			</form>
+			 		<button class="content-close" type="button" title="Закрыть">Закрыть</button>
 			 	</div>
 			</main>
 
@@ -244,6 +244,55 @@
 			</footer>
 		</div>
 		<div class="modal-overlay"></div>
+		<script type="text/javascript">
+			var link = document.querySelector(".feedback");
+			var popup = document.querySelector(".modal-content");
+			var close = popup.querySelector(".content-close");
+			var form = popup.querySelector("form");
+			var login = popup.querySelector("[name=name]");
+			var password = popup.querySelector("[name=email]");
+			var storage = localStorage.getItem("name");
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.add("modal-content-show");
+
+				if (storage) {
+          		name.value = storage;
+          		email.focus();
+        		} else {
+         		name.focus();
+        		}
+
+				
+      		});
+
+      		close.addEventListener("click", function(event) {
+        	event.preventDefault();
+        	popup.classList.remove("modal-content-show");
+        	popup.classList.remove("modal-error");
+      		});
+
+      		form.addEventListener("submit", function(event) {
+        	if (!your-name.value || !email.value) {
+          	event.preventDefault();
+          	popup.classList.remove("modal-error");
+          	popup.offsetWidth = popup.offsetWidth;
+          	popup.classList.add("modal-error");
+         	console.log("Нужно ввести имя и почту"); 
+        	}	else {
+          	localStorage.setItem("name", name.value);
+        	}
+      		});
+
+      		window.addEventListener("keydown", function(event) {
+        	if (event.keyCode === 27) {
+          	if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+            popup.classList.remove("modal-error");
+          	}
+        	}
+      		});
+		</script>
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<script src="js/map.js" type="text/javascript"></script>
 	</body>
