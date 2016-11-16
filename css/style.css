@@ -1078,7 +1078,7 @@ td{
 .name-input, .popup-input{
 	width: 266px;
 	margin-bottom: 20px;
-	padding: 9px 0px;
+	padding: 9px 14px;
 }
 
 .name-label{
@@ -1112,7 +1112,7 @@ td{
 }
 
 .popup-input:focus ~ .popup-label{
-	top: 54px;
+	top: 45px;
 	font-size: 14px;
 	color: #5b9ddf;
 }
@@ -1125,7 +1125,7 @@ td{
 .content-textarea{
 	box-sizing: border-box;
 	padding: 16px;
-	padding-left: 6px;
+	padding-right: 6px;
 	border: 1px solid #c7c6c5;
 	border-radius: 5px;
 	font-size: 16px;
@@ -1146,7 +1146,7 @@ td{
 }
 
 .content-textarea:focus ~ .textarea-label{
-	top: 130px;
+	top: 107px;
 	font-size: 14px;
 	color: #5b9ddf;
 }
