@@ -51,6 +51,7 @@ body>input[type="radio"]{display: none;}
 
 .logo{
 	float: left;
+	width: 154px;
 	margin-right: 16px;
 	margin-top: 9px;
 	margin-left: -5px;
@@ -256,7 +257,7 @@ input{
 	display: block;
 	box-sizing: border-box;
 	outline: none;
-	padding: 15px 0px 15px 14px;
+	padding: 15px 14px 15px 14px;
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
 	font-weight: bold;
@@ -553,6 +554,7 @@ td{
 	position: absolute;
 	right: 372px;
 	top: 72px;
+	text-align: right;
 }
 
 .main-header-contact p{
@@ -565,7 +567,6 @@ td{
 .contact-info{
 	font-size: 22px;
 	line-height: 24px;
-	margin-right: 5px;
 }
 
 .info{margin-bottom: 10px;}
@@ -656,8 +657,8 @@ td{
 }
 
 .special-offer-item{
-	width: 541px;
-	padding-left: 19px;
+	width: 538px;
+	padding: 15px 3px 15px 19px;
 	margin-bottom: 40px;
 	float: left;
 	margin-right: 26px;
@@ -667,11 +668,10 @@ td{
 .special-offer-item:nth-child(2n){margin-right: 0px;}
 
 .special-offer-headline{
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 35px;
 	line-height: 41px;
 	margin: 0;
-	margin-top: 15px;
 	margin-bottom: 16px;
 	color: #fff;
 }
@@ -680,7 +680,7 @@ td{
 	font-size: 18px;
 	line-height: 22px;
 	margin: 0;
-	margin-bottom: 15px;
+	margin-bottom: 43px;
 }
 
 .strawberry-item{
@@ -694,7 +694,7 @@ td{
 
 .strawberry-item .btn, .chocolate-item .btn{
 	float: right;
-	margin: 28px 21px 23px 0px;
+	margin: 0px 17px 9px 0px;
 	padding: 11px 20px 11px 16px;
 }
 
@@ -779,9 +779,12 @@ td{
 .icecream-price{
 	position: absolute;
     bottom: 18px;
-    font-size: 45px;
-    line-height: 45px;
     left: 1px;
+}
+
+.price{
+	font-size: 45px;
+    line-height: 45px;
 }
 
 .icecream-price img{
@@ -858,9 +861,10 @@ td{
 	float: left;
 	background: url(../img/Strawberry_background.jpg) no-repeat;
 	padding: 24px 0px 24px 20px;
-	width: 560px;
+	max-width: 560px;
 	box-sizing: border-box;
 	min-height: 220px;
+	overflow: hidden;
 }
 
 .news-headline {
@@ -881,7 +885,7 @@ td{
 
 .delivery{
 	float: right;
-	background: url(../img/Post_background.png) no-repeat;
+	background: url(../img/Post_background.png);
 	padding: 5px;
 }
 
@@ -892,6 +896,7 @@ td{
 }
 
 .delivery-info p{
+	max-height: 65px;
 	margin: 0px;
 	padding-bottom: 35px;
 	font-size: 16px;
@@ -902,7 +907,7 @@ td{
 .delivery-form .delivery-input{
 	float: left;
 	width: 368px;
-	padding: 9px 0px 9px 14px;
+	padding: 9px 14px 9px 14px;
 	font-size: 16px;
 	line-height: 24px;
 	margin: 0px;
@@ -1313,8 +1318,9 @@ option{outline: none;}
 	height: 21px;
 	background: #f8f7f4;
 	border-radius: 50%;
-	cursor: pointer;
 }
+
+.toggle:hover{cursor: pointer;}
 
 .toggle-min{left: 37px;}
 
@@ -1495,6 +1501,8 @@ option{outline: none;}
 	background-repeat: no-repeat;
 	background-position: 0px 6px;
 }
+
+.prev , .next:hover{background-color: transparent;}
 /*=========Catalog Gllacy End=========*/
 
 /*=========FOOTER=========*/
