@@ -231,70 +231,18 @@
 		<div class="modal-content">
 			<span>Мы обязательно вам ответим!</span>
 			 	<form class="popup-form" action="" method="post">
-			 		<input class="name-input" type="text" name="login" id="name-input" required>
+			 		<input class="name-input" type="text" name="login" id="name-input">
 			 		<label class="name-label label" for="name-input">Как вас зовут?</label>
-			 		<input class="popup-input" type="mail" name="email" id="popup-email" required>
+			 		<input class="popup-input" type="mail" name="email" id="popup-email">
 			 		<label class="popup-label label" for="popup-email">Ваша почта для ответа</label>						
-			 		<textarea class="content-textarea" name="comment" id="comment-field" cols="47" rows="5" required></textarea>
+			 		<textarea class="content-textarea" name="comment" id="comment-field" cols="47" rows="5"></textarea>
 			 		<label class="textarea-label label" for="comment-field">Напишите что-нибудь...</label>
 			 		<button class="btn modal-btn" type="submit" title="Отправить">Отправить</button>
 			 	</form>
 			<button class="content-close" type="button" title="Закрыть">Закрыть</button>
 		</div>
 		<div class="modal-overlay"></div>
-		<script type="text/javascript">
-			var link = document.querySelector(".feedback");
-			var popup = document.querySelector(".modal-content");
-			var overlay = document.querySelector(".modal-overlay");
-			var close = popup.querySelector(".content-close");
-			var form = popup.querySelector("form");
-			var login = popup.querySelector("[name=login]");
-			var password = popup.querySelector("[name=email]");
-			var storage = localStorage.getItem("login");
-
-			link.addEventListener("click", function(event) {
-				event.preventDefault();
-				popup.classList.add("modal-content-show");
-				overlay.classList.add(".modal-overlay-show");
-
-				if (storage) {
-          		login.value = storage;
-          		email.focus();
-        		} else {
-         		login.focus();
-        		}
-
-				
-      		});
-
-      		close.addEventListener("click", function(event) {
-        	event.preventDefault();
-        	popup.classList.remove("modal-content-show");
-        	popup.classList.remove("modal-error");
-        	overlay.classList.remove("modal-overlay-show");
-      		});
-
-      		form.addEventListener("submit", function(event) {
-        	if (!login.value || !email.value) {
-          	event.preventDefault();
-          	popup.classList.remove("modal-error");
-          	popup.offsetWidth = popup.offsetWidth;
-          	popup.classList.add("modal-error");
-         	console.log("Нужно ввести имя и почту"); 
-        	}	else {
-          	localStorage.setItem("name", name.value);
-        	}
-      		});
-
-      		window.addEventListener("keydown", function(event) {
-        	if (event.keyCode === 27) {
-          	if (popup.classList.contains("modal-content-show")) {
-            popup.classList.remove("modal-content-show");
-            popup.classList.remove("modal-error");
-          	}
-        	}
-      		});
-		</script>
+		<script src="js/modal.content.js" type="text/javascript"></script>
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<script src="js/map.js" type="text/javascript"></script>
 	</body>
