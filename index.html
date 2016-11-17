@@ -3,7 +3,6 @@
 	<head>
     	<meta charset="utf-8">
     	<title>HTML Academy: Глейси</title>
-    	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet"> -->
     	<link href="css/normalize.css" rel="stylesheet">
     	<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -33,7 +32,7 @@
 								<a class="main-navigation-item" href="#">Доставка и оплата</a>
 							</li>
 							<li>
-								<a class="main-navigation-item" href="#">О компании</a>
+								<a class="main-navigation-item" href="#">О Компании</a>
 							</li>
 						</ul>
 					</nav>
@@ -202,20 +201,6 @@
 						<a href="#" class="btn feedback">Форма обратной связи</a>
 					</div>		
 				</div>
-
-				<div class="modal-content">
-					<span>Мы обязательно вам ответим!</span>
-			 			<form class="popup-form" action="" method="post">
-			 				<input class="name-input" type="text" name="name" id="name-input" required>
-			 				<label class="name-label label" for="name-input">Как вас зовут?</label>
-			 				<input class="popup-input" type="mail" name="email" id="popup-email" required>
-			 				<label class="popup-label label" for="popup-email">Ваша почта для ответа</label>						
-			 				<textarea class="content-textarea" name="comment" id="comment-field" cols="43" rows="5" required></textarea>
-			 				<label class="textarea-label label" for="comment-field">Напишите что-нибудь...</label>
-			 				<button class="btn modal-btn" type="submit" title="Отправить">Отправить</button>
-			 			</form>
-			 		<button class="content-close" type="button" title="Закрыть">Закрыть</button>
-			 	</div>
 			</main>
 
 			<footer class="main-footer">
@@ -243,24 +228,40 @@
 				</div>
 			</footer>
 		</div>
+		<div class="modal-content">
+			<span>Мы обязательно вам ответим!</span>
+			 	<form class="popup-form" action="" method="post">
+			 		<input class="name-input" type="text" name="login" id="name-input" required>
+			 		<label class="name-label label" for="name-input">Как вас зовут?</label>
+			 		<input class="popup-input" type="mail" name="email" id="popup-email" required>
+			 		<label class="popup-label label" for="popup-email">Ваша почта для ответа</label>						
+			 		<textarea class="content-textarea" name="comment" id="comment-field" cols="47" rows="5" required></textarea>
+			 		<label class="textarea-label label" for="comment-field">Напишите что-нибудь...</label>
+			 		<button class="btn modal-btn" type="submit" title="Отправить">Отправить</button>
+			 	</form>
+			<button class="content-close" type="button" title="Закрыть">Закрыть</button>
+		</div>
 		<div class="modal-overlay"></div>
 		<script type="text/javascript">
 			var link = document.querySelector(".feedback");
 			var popup = document.querySelector(".modal-content");
+			var overlay = document.querySelector(".modal-overlay");
 			var close = popup.querySelector(".content-close");
 			var form = popup.querySelector("form");
-			var login = popup.querySelector("[name=name]");
+			var login = popup.querySelector("[name=login]");
 			var password = popup.querySelector("[name=email]");
-			var storage = localStorage.getItem("name");
+			var storage = localStorage.getItem("login");
+
 			link.addEventListener("click", function(event) {
 				event.preventDefault();
 				popup.classList.add("modal-content-show");
+				overlay.classList.add(".modal-overlay-show");
 
 				if (storage) {
-          		name.value = storage;
+          		login.value = storage;
           		email.focus();
         		} else {
-         		name.focus();
+         		login.focus();
         		}
 
 				
@@ -270,10 +271,11 @@
         	event.preventDefault();
         	popup.classList.remove("modal-content-show");
         	popup.classList.remove("modal-error");
+        	overlay.classList.remove("modal-overlay-show");
       		});
 
       		form.addEventListener("submit", function(event) {
-        	if (!your-name.value || !email.value) {
+        	if (!login.value || !email.value) {
           	event.preventDefault();
           	popup.classList.remove("modal-error");
           	popup.offsetWidth = popup.offsetWidth;
