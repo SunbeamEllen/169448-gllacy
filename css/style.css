@@ -1,3 +1,33 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/RobotoBold.eot');
+    src: url('../fonts/RobotoBold.eot') format('embedded-opentype'),
+         url('../fonts/RobotoBold.woff2') format('woff2'),
+         url('../fonts/RobotoBold.woff') format('woff'),
+         url('../fonts/RobotoBold.ttf') format('truetype'),
+         url('../fonts/RobotoBold.svg#RobotoBold') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/RobotoMedium.eot');
+    src: url('../fonts/RobotoMedium.eot') format('embedded-opentype'),
+         url('../fonts/RobotoMedium.woff2') format('woff2'),
+         url('../fonts/RobotoMedium.woff') format('woff'),
+         url('../fonts/RobotoMedium.ttf') format('truetype'),
+         url('../fonts/RobotoMedium.svg#RobotoMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoRegular.eot');
+    src: url('../fonts/RobotoRegular.eot') format('embedded-opentype'),
+         url('../fonts/RobotoRegular.woff2') format('woff2'),
+         url('../fonts/RobotoRegular.woff') format('woff'),
+         url('../fonts/RobotoRegular.ttf') format('truetype'),
+         url('../fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+}
+
 body{
 	font-weight: 700;
 	font-size: 16px;
@@ -861,10 +891,9 @@ td{
 	float: left;
 	background: url(../img/Strawberry_background.jpg) no-repeat;
 	padding: 24px 0px 24px 20px;
-	max-width: 560px;
+	width: 560px;
 	box-sizing: border-box;
 	min-height: 220px;
-	overflow: hidden;
 }
 
 .news-headline {
