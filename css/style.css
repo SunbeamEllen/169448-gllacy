@@ -309,14 +309,16 @@ input{
 }
 
 .search-input:focus ~ .search-label{
-	top:-20px;
-	font-size: 14px;
+	top:-14px;
+	font-size: 11px;
+	line-height: 13px;
 	color: #5b9ddf;
 }
 
 .search-input:valid ~ .search-label{
-	top:-20px;
-	font-size: 14px;
+	top:-14px;
+	font-size: 11px;
+	line-height: 13px;
 }
 
 .label, .delivery-label{
@@ -379,14 +381,15 @@ input{
 }
 
 .email-input:focus ~ .email-label{
-	top: -20px;
-	font-size:14px;
+	top: -14px;
+	font-size:11px;
+	line-height: 13px;
 	color: #5b9ddf;
 }
 
 .email-input:valid ~ .email-label{
-	top: -20px;
-	font-size: 14px;
+	top: -14px;
+	font-size: 11px;
 }
 
 .password-label{top: 73px;}
@@ -394,10 +397,12 @@ input{
 .password-input:focus ~ .password-label{
 	color: #5b9ddf;
 	top: 43px;
+	font-size: 11px;
 }
 
 .password-input:valid ~ .password-label{
 	top: 43px;
+	font-size: 11px;
 }
 
 .btn{
@@ -462,7 +467,7 @@ input{
 }
 
 .full-bucket{
-	padding: 7px 12px 8px 43px; 
+	padding: 7px 16px 8px 43px; 
 	background: #f7f6f3 url(../img/Bucket_full.png) no-repeat 18% 58%;
 	border-radius: 16px;
 	color: #323232;
@@ -785,7 +790,7 @@ td{
 	display: inline-block;
 	text-align: center;
 	font-weight: 400;
-	padding: 7px 8px 0px 9px;
+	padding: 7px 4px 0px 9px;
 	font-size: 16px;
 	line-height: 22px;
 	color: #fff;
@@ -969,13 +974,13 @@ td{
 
 .delivery-input:focus ~ .delivery-label{
 	top: -22px;
-	font-size: 14px;
+	font-size: 11px;
 	color: #8fbdec;
 }
 
 .delivery-input:valid ~ .delivery-label{
 	top:-22px;
-	font-size: 14px;
+	font-size: 11px;
 }
 
 .delivery-form .btn{
@@ -1222,6 +1227,7 @@ td{
 	animation: bounce 0.6s;
 }
 /*MODAL WINDOW END*/
+
 /*=========Index Gllacy End=========*/
 
 /*=========Catalog Gllacy=========*/
@@ -1272,53 +1278,55 @@ td{
 	line-height: 41px;
 	color: #fff;
 	margin: 0px;
-	margin-bottom: 26px;
+	margin-bottom: 21px;
 }
 
 .ice-cream-selection{
 	padding-right: 20px;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
+}
+
+.filter-box{
+	margin-bottom: 9px;
 }
 
 .sorting-part{
 	float: left;
-	position: relative;
 	margin: 0px;
-	border: none;
-	padding: 5px 0px 6px 0px;
-	margin-bottom: 16px;
 	margin-right: 15px;
-	background: rgba(255,255,255,0.2);
-	border-radius: 30px;
+	padding: 0px;
+	border: none;
+	outline: none;	
 }
 
-legend{
+.sorting-part legend{
 	font-size: 14px;
 	line-height: 16px;
-	padding: 0px;
-	padding-bottom: 31px;
-	padding-left: 17px;
+	padding: 7px 0px 6px 17px;
 	font-weight: 400;
+	font-family: 'RobotoMedium';
 }
 
-option{outline: none;}
+.sorting-part option{outline: none;}
 
-.sorting{width: 192px;}
+.sorting-item{
+	position: relative;
+	width: 192px;
+	border-radius: 30px;
+	background: rgba(255,255,255,0.2);
+}
 
 .sorting-select{
-	position: absolute;
-	width: 192px;
-	top: 22px;
-	right: 8px;
-	left: 0px;
-	border: none;
+	width: 192px;	
 	background: transparent url(../img/Marker.png) 93% 48% no-repeat;
 	color: #fff;
-	font-weight: bold;
-	outline: none;
+	font-weight: bold;	
 	border-radius: 30px;
-	padding: 7px 17px;
+	padding: 8px 17px;
 	font-size: 16px;
+	line-height: 18px;
+	font-family: 'RobotoMedium';
+	outline: none;
 	-webkit-appearance: none;
   	-moz-appearance: none;
   	text-indent: 0.01px; 
@@ -1333,15 +1341,17 @@ option{outline: none;}
 	
 }
 
-.range{width: 222px;}
-
-.range-filter{
-	width: 100%;
+.range-controls{
+	position: relative;
+	width: 222px;
+	padding:  18px 0px 18px 0px;
+	border-radius: 30px;
+	background: rgba(255,255,255,0.2);
 }
 
 .scale, .bar{
 	position: absolute;
-	top: 39px;
+	top: 16px;
 	left: 18px;
 	width: 188px;
 	height: 3px;
@@ -1357,7 +1367,7 @@ option{outline: none;}
 
 .toggle{
 	position: absolute;
-	top: 30px;
+	top: 8px;
 	left: 0px;
 	width: 21px;
 	height: 21px;
@@ -1372,6 +1382,9 @@ option{outline: none;}
 .toggle-max{left: 134px;}
 
 .fatness{
+	border-radius: 30px;
+	background: rgba(255,255,255,0.2);
+	padding:  7px 0px 7px 0px;
 	width: 415px; 
 	margin-right: 5px;
 	font-size: 0;
@@ -1382,24 +1395,28 @@ option{outline: none;}
 }
 
 .radio-label, .checkbox-label{
+	position: relative;
 	display: inline-block;
+	vertical-align: top;
 	cursor: pointer;
-	top: 31px;
-	left: 15px;
-	padding-left: 30px;
-	position: absolute;
+	padding-left: 45px;	
+	margin-right: 5px;
 	font-size: 16px;
-	margin-right: 15px;
+}
+
+.radio-label:last-of-type, .checkbox-label:last-of-type{
+	margin-right: 0px;
 }
 
 .radio-label::before, .checkbox-label::before{
+	position: absolute;
     content: "";
     display: inline-block;
     width: 20px;
 	height: 20px;
     margin-right: 0px;
-	position: absolute;
-    left: 0;
+    top: 0px;
+    left: 15px;
 	background: url(../img/Radio-sprite.png) no-repeat;
 }
 
@@ -1419,16 +1436,12 @@ option{outline: none;}
 	opacity: 0.4;
 }
 
-.ten{left: 86px;}
-
-.before30{left: 188px;}
-
-.above30{
-	left: 289px;
-	margin-right: 0px;
+.fillers{
+	width: 702px;
+	border-radius: 30px;
+	background: rgba(255,255,255,0.2);
+	padding:  7px 0px 7px 0px;
 }
-
-.fillers{width: 702px;}
 
 .checkbox-label::before{
 	background: url(../img/Checkbox-sprite.png) no-repeat;
@@ -1450,23 +1463,13 @@ option{outline: none;}
 	opacity: 0.4;
 }
 
-.chocolate{left: 18px;}
-
-.sugar{left: 24%;}
-
-.fruits{left: 53%;}
-
-.syrup{left: 69.4%;}
-
-.jam{left: 85.1%; margin-right: 0px;}
-
 .apply{
 	width: 142px;
 	float: left;
 	background-color: transparent;
     border: 2px solid #f5f7f6;
     color: #fff;
-    margin-top: 22px;
+    margin-top: 29px;
     padding: 5px 0px;
     border-radius: 30px;
     outline: none;
@@ -1487,7 +1490,7 @@ option{outline: none;}
 .paginator{
 	float: right;
 	width: 190px;
-	margin-top: 42px;
+	margin-top: 46px;
 	margin-bottom: 30px;
 	font-size: 0;	
 }

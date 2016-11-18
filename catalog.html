@@ -39,7 +39,7 @@
 					<div class="search-block">
 						<a href="#" class="search"></a>	
 						<div class="office-search-form">
-							<form class="search-form" action="" method="get">
+							<form action="#" class="search-form" method="get">
 								<input class="search-input" type="search" name="search" id="search-input" required>
 								<label class="search-label label" for="search-input">Что ищем?</label>
 							</form>
@@ -49,8 +49,8 @@
 					<div class="login-block">
 						<a href="#" class="login">Вход</a>
 						<div class="office-login-form">
-							<form class="login-form" action="" method="post">
-								<input class="email-input" type="mail" name="email" id="email-input" required>
+							<form action="#" class="login-form" method="post">
+								<input class="email-input" type="email" name="mail" id="email-input" required>
 								<label class="email-label label" for="email-input">Электронная почта</label>
 								<input class="password-input" type="password" name="password" id="password-input" required="">
 								<label class="password-label label" for="">Пароль</label>
@@ -94,7 +94,7 @@
 				<div class="main-header-contact">
 					<p>С 10 до 20, ежедневно</p>
 					<span class="contact-info">8 812 450-25-25</span>
-				</div>		
+				</div>			
 			</div>		
 		</header>
 
@@ -104,65 +104,76 @@
 					<a class="breadcrumbs-item" href="index.html">Главная</a>
 					<a class="breadcrumbs-item" href="catalog.html">Каталог</a>
 					<a class="breadcrumbs-item" href="#">Сливочное</a>
-				</div>			
+				</div>
 
 				<div class="choice-zone clearfix">
 					<h1 class="catalog-headline">Сливочное мороженое</h1>
-					<form class="ice-cream-selection clearfix" action="" method="post">
+					<form action="#" class="ice-cream-selection clearfix" method="post">
+					<div class="filter-box clearfix">
 						<fieldset class="sorting-part sorting">
 							<legend>Сортировка:</legend>
+							<div class="sorting-item">
 								<select name="sorting" class="sorting-select">
 									<option value="criterion">по популярности</option>
 									<option value="criterion">сначала недорогие</option>
 									<option value="criterion">сначала дорогие</option>
 									<option value="criterion">по жирности</option>
-								</select>																
+								</select>	
+							</div>																												
 						</fieldset>
 
-						<fieldset class="sorting-part range">
-							<legend>Цена: 100 руб. - 500 руб.</legend>								
-								<div class="scale">
-									<div class="bar"></div>
-								</div>
-								<div class="toggle toggle-min"></div>
-								<div class="toggle toggle-max"></div>		
+						<fieldset class="sorting-part">
+							<legend>Цена: 100 руб. - 500 руб.</legend>
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>																		
 						</fieldset>
 
-						<fieldset class="sorting-part fatness">
+						<fieldset class="sorting-part">
 							<legend>Жирность:</legend>
-							<input class="radio-input" type="radio" name="fatness" value="0%" id="zero-input">	
-							<label for="zero-input" class="radio-label zero">0%</label>
+							<div class="fatness">
+								<input class="radio-input" type="radio" name="fatness" value="0%" id="zero-input">	
+								<label for="zero-input" class="radio-label zero">0%</label>
 							
-							<input class="radio-input" type="radio" name="fatness" value="до 10%" id="ten-input" checked>
-							<label for="ten-input" class="radio-label ten">до 10%</label>
+								<input class="radio-input" type="radio" name="fatness" value="до 10%" id="ten-input" checked>
+								<label for="ten-input" class="radio-label ten">до 10%</label>
 							
-							<input for="before30" class="radio-input" type="radio" name="fatness" value="до 30%" id="before30-input">
-							<label for="before30-input" class="radio-label before30">до 30%</label>
+								<input for="before30" class="radio-input" type="radio" name="fatness" value="до 30%" id="before30-input">
+								<label for="before30-input" class="radio-label before30">до 30%</label>
 							
-							<input class="radio-input" type="radio" name="fatness" value="выше 30%" id="above30-input">	
-							<label for="above30-input" class="radio-label above30">выше 30%</label>								
+								<input class="radio-input" type="radio" name="fatness" value="выше 30%" id="above30-input">	
+								<label for="above30-input" class="radio-label above30">выше 30%</label>		
+							</div>													
 						</fieldset>
+					</div>
 
-						<fieldset class="sorting-part fillers">
+					<div class="filter-box clearfix">
+						<fieldset class="sorting-part">
 							<legend>Наполнители:</legend>
+							<div class="fillers">
+								<input type="checkbox" class="checkbox-input" id="chocolate" checked>
+								<label for="chocolate" class="checkbox-label chocolate">шоколадные</label>
 
-							<input type="checkbox" class="checkbox-input" id="chocolate" checked>
-							<label for="chocolate" class="checkbox-label chocolate">шоколадные</label>
+								<input type="checkbox" class="checkbox-input" id="sugar" checked>
+								<label for="sugar" class="checkbox-label sugar">сахарные присыпки</label>
 
-							<input type="checkbox" class="checkbox-input" id="sugar" checked>
-							<label for="sugar" class="checkbox-label sugar">сахарные присыпки</label>
-
-							<input type="checkbox" class="checkbox-input" id="fruits">
-							<label for="fruits" class="checkbox-label fruits">фрукты</label>
+								<input type="checkbox" class="checkbox-input" id="fruits">
+								<label for="fruits" class="checkbox-label fruits">фрукты</label>
 							
-							<input type="checkbox" class="checkbox-input" id="syrup">
-							<label for="syrup" class="checkbox-label syrup">сиропы</label>
+								<input type="checkbox" class="checkbox-input" id="syrup">
+								<label for="syrup" class="checkbox-label syrup">сиропы</label>
 
-							<input type="checkbox" class="checkbox-input" id="jam">
-							<label for="jam" class="checkbox-label jam">джемы</label>
+								<input type="checkbox" class="checkbox-input" id="jam">
+								<label for="jam" class="checkbox-label jam">джемы</label>
+							</div>							
 						</fieldset>
 
-						<button class="apply" type="submit">Применить</button>				
+						<button class="apply" type="submit">Применить</button>	
+					</div>									
 					</form>
 				</div>
 			
