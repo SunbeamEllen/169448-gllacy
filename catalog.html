@@ -53,7 +53,7 @@
 								<input class="email-input" type="email" name="mail" id="email-input" required>
 								<label class="email-label label" for="email-input">Электронная почта</label>
 								<input class="password-input" type="password" name="password" id="password-input" required="">
-								<label class="password-label label" for="">Пароль</label>
+								<label class="password-label label" for="password-input">Пароль</label>
 								<button class="btn" type="submit">Войти</button>							
 							</form>
 							<a href="#" class="forgot-password">Забыли пароль?</a>
@@ -110,9 +110,9 @@
 					<h1 class="catalog-headline">Сливочное мороженое</h1>
 					<form action="#" class="ice-cream-selection clearfix" method="post">
 					<div class="filter-box clearfix">
-						<fieldset class="sorting-part sorting">
+						<fieldset class="sorting-part">
 							<legend>Сортировка:</legend>
-							<div class="sorting-item">
+							<div class="sorting-part-item sorting">
 								<select name="sorting" class="sorting-select">
 									<option value="criterion">по популярности</option>
 									<option value="criterion">сначала недорогие</option>
@@ -124,7 +124,7 @@
 
 						<fieldset class="sorting-part">
 							<legend>Цена: 100 руб. - 500 руб.</legend>
-								<div class="range-controls">
+								<div class="sorting-part-item range">
 									<div class="scale">
 										<div class="bar"></div>
 									</div>
@@ -135,14 +135,14 @@
 
 						<fieldset class="sorting-part">
 							<legend>Жирность:</legend>
-							<div class="fatness">
+							<div class="sorting-part-item fatness">
 								<input class="radio-input" type="radio" name="fatness" value="0%" id="zero-input">	
 								<label for="zero-input" class="radio-label zero">0%</label>
 							
 								<input class="radio-input" type="radio" name="fatness" value="до 10%" id="ten-input" checked>
 								<label for="ten-input" class="radio-label ten">до 10%</label>
 							
-								<input for="before30" class="radio-input" type="radio" name="fatness" value="до 30%" id="before30-input">
+								<input class="radio-input" type="radio" name="fatness" value="до 30%" id="before30-input">
 								<label for="before30-input" class="radio-label before30">до 30%</label>
 							
 								<input class="radio-input" type="radio" name="fatness" value="выше 30%" id="above30-input">	
@@ -154,7 +154,7 @@
 					<div class="filter-box clearfix">
 						<fieldset class="sorting-part">
 							<legend>Наполнители:</legend>
-							<div class="fillers">
+							<div class="sorting-part-item fillers">
 								<input type="checkbox" class="checkbox-input" id="chocolate" checked>
 								<label for="chocolate" class="checkbox-label chocolate">шоколадные</label>
 

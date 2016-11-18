@@ -1299,6 +1299,11 @@ td{
 	outline: none;	
 }
 
+.sorting-part-item{
+	border-radius: 30px;
+	background: rgba(255,255,255,0.2);
+}
+
 .sorting-part legend{
 	font-size: 14px;
 	line-height: 16px;
@@ -1309,11 +1314,9 @@ td{
 
 .sorting-part option{outline: none;}
 
-.sorting-item{
+.sorting{
 	position: relative;
 	width: 192px;
-	border-radius: 30px;
-	background: rgba(255,255,255,0.2);
 }
 
 .sorting-select{
@@ -1341,12 +1344,10 @@ td{
 	
 }
 
-.range-controls{
+.range{
 	position: relative;
 	width: 222px;
 	padding:  18px 0px 18px 0px;
-	border-radius: 30px;
-	background: rgba(255,255,255,0.2);
 }
 
 .scale, .bar{
@@ -1382,10 +1383,8 @@ td{
 .toggle-max{left: 134px;}
 
 .fatness{
-	border-radius: 30px;
-	background: rgba(255,255,255,0.2);
-	padding:  7px 0px 7px 0px;
 	width: 415px; 
+	padding:  7px 0px 7px 0px;
 	margin-right: 5px;
 	font-size: 0;
 }
@@ -1438,8 +1437,6 @@ td{
 
 .fillers{
 	width: 702px;
-	border-radius: 30px;
-	background: rgba(255,255,255,0.2);
 	padding:  7px 0px 7px 0px;
 }
 
@@ -1652,7 +1649,7 @@ td{
 
 .copyright .academy{
 	display: inline-block;
-	font-weight: 400px;
+	font-weight: 400;
 	font-size: 12px;
 	line-height: 18px;
 	color: #fefefe;
