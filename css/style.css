@@ -82,7 +82,6 @@ body>input[type="radio"]{display: none;}
 
 .logo{
 	float: left;
-	width: 154px;
 	margin-right: 16px;
 	margin-top: 9px;
 	margin-left: -5px;
@@ -390,6 +389,7 @@ input{
 .email-input:valid ~ .email-label{
 	top: -14px;
 	font-size: 11px;
+	line-height: 13px;
 }
 
 .password-label{top: 73px;}
@@ -665,30 +665,30 @@ td{
 	background-color: rgba(255,255,255, 0.6); 
 }
 
-#btn-1:checked ~ .wrapper #slide1,
-#btn-2:checked ~ .wrapper #slide2,
-#btn-3:checked ~ .wrapper #slide3 {
+.btn-1:checked ~ .wrapper .slide1,
+.btn-2:checked ~ .wrapper .slide2,
+.btn-3:checked ~ .wrapper .slide3 {
   display: block;
 }
 
-#btn-1:checked ~ .wrapper {
+.btn-1:checked ~ .wrapper {
   background-color: #849d8f;
   background-image: url(../img/Icecream_gallery_1.png);
 }
 
-#btn-2:checked ~ .wrapper {
+.btn-2:checked ~ .wrapper {
   background-color: #8996a6;
   background-image: url(../img/Icecream_gallery_2.png);
 }
 
-#btn-3:checked ~ .wrapper {
+.btn-3:checked ~ .wrapper {
   background-color: #9d8b84;
   background-image: url(../img/Icecream_gallery_3.png);
 }
 
-#btn-1:checked ~ .wrapper .controls[for="btn-1"],
-#btn-2:checked ~ .wrapper .controls[for="btn-2"],
-#btn-3:checked ~ .wrapper .controls[for="btn-3"] {
+.btn-1:checked ~ .wrapper .controls[for="btn-1"],
+.btn-2:checked ~ .wrapper .controls[for="btn-2"],
+.btn-3:checked ~ .wrapper .controls[for="btn-3"] {
   background-color: #ffffff;
 }
 
@@ -741,6 +741,12 @@ td{
 .bestseller{margin-bottom: 38px;}
 
 .bestseller-item{
+	float: left;	
+	width: 267px;
+	margin-right: 26px;
+}
+
+.catalog-item{
 	position: relative;
 	float: left;	
 	width: 267px;
@@ -748,11 +754,11 @@ td{
 	z-index: 1;	
 }
 
-.bestseller-item:hover{z-index: 2;}
+.catalog-item:hover{z-index: 2;}
 
-.bestseller-item:hover .icecream-item{text-decoration: none;}
+.catalog-item:hover .icecream-item{text-decoration: none;}
 
-.bestseller-item:hover::before{
+.catalog-item:hover::before{
 	position: absolute;
 	content: '';
 	width: 293px;
@@ -766,7 +772,7 @@ td{
 	z-index: 3;	
 }
 
-.bestseller-item>.btn{
+.catalog-item>.btn{
 	display: none;
 	position: absolute;
 	bottom: -53px;
@@ -777,12 +783,12 @@ td{
     padding: 10px 11px 10px 14px;
 }
 
-.bestseller-item:hover .btn{
+.catalog-item:hover .btn{
 	display: block;
 	z-index: 4;
 }
 
-.bestseller-item:last-child{
+.bestseller-item:last-child, .catalog-item:last-child{
 	margin-right: 0px;
 }
 
@@ -798,7 +804,11 @@ td{
 	text-decoration: underline;
 }
 
-.bestseller-item:hover .item-position{z-index: 5;} 
+.bestseller-item .icecream-item:hover{
+	color: #ffbc9e;
+}
+
+.catalog-item:hover .item-position{z-index: 5;} 
 
 .item-position{
 	position: relative;
