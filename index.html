@@ -42,8 +42,10 @@
 							<a href="#" class="search"></a>	
 							<div class="office-search-form">
 								<form action="#" class="search-form" method="get">
-									<input class="search-input" type="search" name="search" id="search-input" required>
-									<label class="search-label label" for="search-input">Что ищем?</label>
+									<div class="position-box">
+										<input class="search-input" type="search" name="search" id="search-input" required>
+										<label class="search-label label" for="search-input">Что ищем?</label>
+									</div>									
 								</form>
 							</div>	
 						</div>				
@@ -52,10 +54,15 @@
 							<a href="#" class="login">Вход</a>
 							<div class="office-login-form">
 								<form action="#" class="login-form" method="post">
-									<input class="email-input" type="email" name="mail" id="email-input" required>
-									<label class="email-label label" for="email-input">Электронная почта</label>
-									<input class="password-input" type="password" name="password" id="password-input" required>
-									<label class="password-label label" for="password-input">Пароль</label>
+									<div class="position-box">
+										<input class="email-input" type="email" name="mail" id="email-input" required>
+										<label class="email-label label" for="email-input">Электронная почта</label>
+									</div>
+
+									<div class="position-box">
+										<input class="password-input" type="password" name="password" id="password-input" required>
+										<label class="password-label label" for="password-input">Пароль</label>
+									</div>									
 									<button class="btn" type="submit">Войти</button>							
 								</form>
 								<a href="#" class="forgot-password">Забыли пароль?</a>
@@ -118,37 +125,33 @@
 						<div class="bestseller-item">
 							<div class="item-position icecream-position">
 								<img src="img/Orange_icecream.png" alt="icecream">
-								<div class="icecream-price"><span class="price">310</span><img src="img/Rub.png" alt=""><span class="kg">/кг</span></div>	
+								<div class="icecream-price"><span class="price">310</span><img src="img/rub.png" alt=""><span class="kg">/кг</span></div>	
 							</div>	
 							<a class="icecream-item" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>				
-							<!-- <a href="#" class="btn">Быстрый просмотр</a> -->
 						</div>
 
 						<div class="bestseller-item">
 							<div class="item-position icecream-position">
 								<img src="img/Chocolate_icecream.png" alt="icecream">
-								<div class="icecream-price"><span class="price">380</span><img src="img/Rub.png" alt=""><span class="kg">/кг</span></div>
+								<div class="icecream-price"><span class="price">380</span><img src="img/rub.png" alt=""><span class="kg">/кг</span></div>
 							</div>	
 							<a class="icecream-item" href="#">Сливочно-кофейное с кусочками шоколада</a>						
-							<!-- <a href="#" class="btn">Быстрый просмотр</a> -->
 						</div>
 			
 						<div class="bestseller-item">							
 							<div class="item-position icecream-position">
 								<img src="img/Strawberry_icecream.png" alt="icecream">
-								<div class="icecream-price"><span class="price">355</span><img src="img/Rub.png" alt=""><span class="kg">/кг</span></div>
+								<div class="icecream-price"><span class="price">355</span><img src="img/rub.png" alt=""><span class="kg">/кг</span></div>
 							</div>
 							<a class="icecream-item" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>	
-							<!-- <a href="#" class="btn">Быстрый просмотр</a>										 -->
 						</div>
 
 						<div class="bestseller-item">
 							<div class="item-position icecream-position">
 								<img src="img/Cream_brulee.png" alt="icecream">
-								<div class="icecream-price"><span class="price">415</span><img src="img/Rub.png" alt=""><span class="kg">/кг</span></div>	
+								<div class="icecream-price"><span class="price">415</span><img src="img/rub.png" alt=""><span class="kg">/кг</span></div>	
 							</div>
 							<a class="icecream-item" href="#">Сливочное крем-брюле с карамельной подливкой</a>						
-							<!-- <a href="#" class="btn">Быстрый просмотр</a> -->
 						</div>									
 					</div>
 
@@ -179,8 +182,10 @@
 								<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
 								</p>
 								<form action="#" class="delivery-form clearfix" method="post">
-									<input class="delivery-input" type="email" name="mail" id="delivery-mail" required>
-									<label for="delivery-mail" class="delivery-label label">Электронная почта</label>
+									<div class="position-box">										
+										<input class="delivery-input" type="email" name="mail" id="delivery-mail" required>
+										<label for="delivery-mail" class="delivery-label label">Электронная почта</label>
+									</div>
 									<button class="btn" type="submit">Отправить</button>
 								</form>
 							</div>							
@@ -231,12 +236,18 @@
 		<div class="modal-content">
 			<span>Мы обязательно вам ответим!</span>
 			 	<form action="#" class="popup-form" method="post">
-			 		<input class="name-input" type="text" name="login" id="name-input">
-			 		<label class="name-label label" for="name-input">Как вас зовут?</label>
-			 		<input class="popup-input" type="email" name="mail" id="popup-email">
-			 		<label class="popup-label label" for="popup-email">Ваша почта для ответа</label>						
-			 		<textarea class="content-textarea" name="comment" id="comment-field" cols="47" rows="5"></textarea>
-			 		<label class="textarea-label label" for="comment-field">Напишите что-нибудь...</label>
+			 		<div class="position-box">
+			 			<input class="name-input" type="text" name="login" id="name-input" required>
+			 			<label class="name-label label" for="name-input">Как вас зовут?</label>
+			 		</div>
+			 		<div class="position-box">
+			 			<input class="popup-input" type="email" name="mail" id="popup-email" required>
+			 			<label class="popup-label label" for="popup-email">Ваша почта для ответа</label>
+			 		</div>
+			 		<div class="position-box">
+			 			<textarea class="content-textarea" name="comment" id="comment-field" cols="47" rows="5" required></textarea>
+			 			<label class="textarea-label label" for="comment-field">Напишите что-нибудь...</label>
+			 		</div>			 		
 			 		<button class="btn modal-btn" type="submit" title="Отправить">Отправить</button>
 			 	</form>
 			<button class="content-close" type="button" title="Закрыть">Закрыть</button>

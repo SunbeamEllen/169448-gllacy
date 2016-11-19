@@ -40,8 +40,10 @@
 						<a href="#" class="search"></a>	
 						<div class="office-search-form">
 							<form action="#" class="search-form" method="get">
-								<input class="search-input" type="search" name="search" id="search-input" required>
-								<label class="search-label label" for="search-input">Что ищем?</label>
+								<div class="position-box">
+									<input class="search-input" type="search" name="search" id="search-input" required>
+									<label class="search-label label" for="search-input">Что ищем?</label>
+								</div>								
 							</form>
 						</div>	
 					</div>	
@@ -50,10 +52,14 @@
 						<a href="#" class="login">Вход</a>
 						<div class="office-login-form">
 							<form action="#" class="login-form" method="post">
+							<div class="position-box">
 								<input class="email-input" type="email" name="mail" id="email-input" required>
 								<label class="email-label label" for="email-input">Электронная почта</label>
+							</div>
+							<div class="position-box">
 								<input class="password-input" type="password" name="password" id="password-input" required="">
 								<label class="password-label label" for="password-input">Пароль</label>
+							</div>							
 								<button class="btn" type="submit">Войти</button>							
 							</form>
 							<a href="#" class="forgot-password">Забыли пароль?</a>
@@ -100,7 +106,7 @@
 
 		<main>
 			<div class="container">
-				<div class="breadcrumbs">
+				<div class="breadcrumbs clearfix">
 					<a class="breadcrumbs-item" href="index.html">Главная</a>
 					<a class="breadcrumbs-item" href="catalog.html">Каталог</a>
 					<a class="breadcrumbs-item" href="#">Сливочное</a>
